@@ -16,7 +16,7 @@
 		in {	
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			inherit system;
-			modules = [ ./configuration.nix ];
+			modules = [ ./nixos/configuration.nix ];
 		};
 
 		homeConfigurations.kieran = home-manager.lib.homeManagerConfiguration {

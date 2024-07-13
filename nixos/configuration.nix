@@ -6,8 +6,9 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [  
       ./hardware-configuration.nix
+      ./packages.nix
     ];
 
   # Bootloader.
@@ -119,55 +120,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-
-     # Desktop apps
-     audacity
-     brave
-     kitty # terminal
-     mako  # Notifications (replaces dunst)
-     gparted
-     mpv
-     discord
-     gparted
-     obsidian
-     zoom-us
-     pcmanfm-qt # File manager and desktop icon manager
-     # polymc # Open source Minecraft launcher
-
-     # Home manager
-     home-manager
-     
-     # Coding
-     nodejs
-     zed-editor
-     python3
-
-     # CLI
-     neofetch
-     vim
-     wget
-     git
-     unzip
-     btop
-     nix-index
-     ranger
-     zip
-     yt-dlp
-     openssl
-     lazygit
-     bluez
-     bluez-tools
-     zsh
-     
-     # Hyprland
-     waybar
-     libnotify
-     swww
-     rofi-wayland
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
