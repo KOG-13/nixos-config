@@ -5,6 +5,8 @@
 	};
 
 	environment.systemPackages = with pkgs; [
+
+		# Window Manager/Desktop Manager stuff
 		
 		#Desktop apps
 		audacity # audio editor/mixer
@@ -19,7 +21,7 @@
 		pcmanfm-qt # file manager and desktop icon manager
 		# polymc # open source Minecraft launcher
 
-		# Home Man
+		# Home Manager
 		home-manager
 
 		# Coding
@@ -46,6 +48,8 @@
 		zsh
 
 		# Hyprland
+		hyprland
+		xdg-desktop-portal-hyprland
 		waybar # taskbar for hyprland
 		libnotify # for notifications
 		swww # wallpaper manager

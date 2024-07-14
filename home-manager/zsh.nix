@@ -19,9 +19,17 @@
 			cdl = "cd && clear";
 			cl = "clear";
 
+			vim = "nvim";
+			v = "nvim";
 		};
 
 		history.size = 1000;
 		history.path = "${config.xdg.dataHome}/zsh/history";
+
+		oh-my-zsh = {
+			enable = true;
+			plugins = [ "git" "sudo" ];
+			theme = "agnoster";
+		};
 	};
 }
