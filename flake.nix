@@ -2,21 +2,32 @@
 	description = "My system configuration";
 	
 	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
 
 		home-manager = {
-			url = "github:nix-community/home-manager/release-24.05";
+			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
 
-	outputs = { nixpkgs, home-manager, ... }: 
+	outputs = { self, nixpkgs, nixpkgs-stable,  home-manager, ... }@inputs: 
+
 		let 
 			system = "x86_64-linux";
 		in {	
+
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-			inherit system;
-			modules = [ ./nixos/configuration.nix ];
+			specialArgs = {
+				pkgs-stable = import nixpkgs-stable {
+					inherit system;
+					config.allowUnfree = true;
+				};
+				inherit inputs system;
+			};
+			modules = [ 
+				./nixos/configuration.nix 
+			];
 		};
 
 		homeConfigurations.kieran = home-manager.lib.homeManagerConfiguration {
