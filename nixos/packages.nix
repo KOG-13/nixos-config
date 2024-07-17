@@ -49,6 +49,17 @@
 		bluez-tools
 		zsh
 
+		#Fun packages
+		cowsay
+		lolcat
+		figlet
+		pipes
+		cbonsai
+		fortune-kind
+		cava
+		cmatrix
+		pfetch
+
 		# Hyprland
 		hyprland
 		xdg-desktop-portal-hyprland
