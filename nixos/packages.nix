@@ -19,6 +19,8 @@
 		obsidian # text editor
 		zoom-us # zoom chat
 		pcmanfm-qt # file manager and desktop icon manager
+		pika-backup # Backup Manager
+		keepassxc
 		# polymc # open source Minecraft launcher
 
 		# Home Manager

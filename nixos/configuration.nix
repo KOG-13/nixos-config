@@ -2,7 +2,7 @@
 
 {
   imports =
-    [  
+    [ 
       ./hardware-configuration.nix
       ./packages.nix
       ./modules/bundle.nix
@@ -16,7 +16,8 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
 
-  time.timeZone = "America/New_York"; # Set your time zone.
+  # Set your time zone.
+  time.timeZone = "America/New_York";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -32,18 +33,17 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ]; # Enabling flakes
- 
+  nix.settings.experimental-features = [ "nix-command" "flakes"];
+
   # Automatically delete config versions older than 30 days
   nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 30d";
+	automatic = true;
+	dates = "weekly";
+	options = "--delete-older-than 30d";
   };
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-
+  #xdg.portal.enable = true;
+  #xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -76,6 +76,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "24.05"; # Don't touch this
+  system.stateVersion = "24.05"; # Did you read the comment?
 
 }
