@@ -5,6 +5,10 @@
 		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
 
+		initExtra = ''
+			bash -c 'fortune | pokemonsay'
+		'';
+
 		shellAliases = 
 			let
 				flakeDir = "~/nix";
@@ -21,6 +25,8 @@
 
 			vim = "nvim";
 			v = "nvim";
+
+			pkgs = "nvim ~/nix/nixos/packages.nix";
 		};
 
 		history.size = 1000;

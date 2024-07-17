@@ -6,6 +6,7 @@
 		./hyprland.nix
 		./networkManager.nix
 		./sound.nix
+		./steam.nix
 		./user.nix
 		./xserver.nix
 	];

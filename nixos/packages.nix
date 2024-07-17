@@ -6,67 +6,104 @@
 
 	environment.systemPackages = with pkgs; [
 
-		# Window Manager/Desktop Manager stuff
-		
-		#Desktop apps
-		audacity # audio editor/mixer
-		brave # browser
-		kitty # terminal emulator
-		mako # notification manager for hyprland (replaces dunst)
-		gparted # gui partition manager
-		mpv # music daemon
-		discord
-		obsidian # text editor
-		zoom-us # zoom chat
-		pcmanfm-qt # file manager and desktop icon manager
-		pika-backup # Backup Manager
-		keepassxc
-		# polymc # open source Minecraft launcher
+	#====Desktop apps==============================#	
 
-		# Home Manager
+	##Audio
+		audacity # audio editor/mixer
+		puddletag # music file metadata editor
+
+	##Communication
+		discord
+		thunderbird # email client
+		zoom-us # zoom chat
+
+	##Creativity
+		aseprite # Pixel art creation tool
+		blender # 3D modeling software
+		blockbench # Voxel modeling software
+		gimp # FOSS Photoshop
+		godot_4 # Game development platform
+		krita # Drawing program
+
+	##Gaming
+		# polymc # open source Minecraft launcher
+		steam
+
+	##Productivity
+		libreoffice-qt6-still
+		mysql-workbench # MySQL editor
+		obsidian # Markdown editor
+		zed-editor # New text editor
+
+	##Tools
+		brave # Web browser
+		gparted # GUI partition manager
+		keepassxc # Locally hosted password manager
+		mullvad-vpn # VPN client
+		pcmanfm # File manager
+		pika-backup # Backup manager
+		
+	##Video
+		makemkv # BluRay and DVD ripper
+		vlc # Video player
+
+	#====Hyprland=======================================#
+
+		hyprland
+		libnotify # for notifications
+		mako # notification manager for hyprland (replaces dunst)
+		rofi-wayland # program search
+		swww # wallpaper manager
+		waybar # taskbar for hyprland
+		xdg-desktop-portal-hyprland
+
+	#====CLI Programs==================================#
+
+	## Terminal
+		kitty # Terminal emulator
+		nix-index # A files database for nixpkgs
+		zsh # Terminal shell
+	##Productivity
+		bluez # bluetooth manager
+		bluez-tools # Additional tools to manage bluetooth devices
+		btop # TUI system monitor
+		git # Version control manager
+		lazygit # TUI for git commands
+		neovim # best editor
+		openssl # Library for SSL and TLD protocols
+		ranger # TUI file manager
+		unzip # Zip file extracter
+		vim # better editor
+		wget # File retrieval for HTTP/S, FTP
+		yt-dlp # CLI for downloading youtube videos
+		zip # File compressor/archiver
+	
+	## Coding
+		gcc # GNU compiler
+		nodejs # Javascript framework
+		python3 # Python programming language
+		rustup # Rust language toolchain installer
+
+	## Daemons
+		mpv # music daemon
+
+	## Fun packages
+		cava # Audio visualizer
+		cbonsai # For people who kill real plants
+		cmatrix # RAM Eater 3000
+		cowsay # Don't have a cow, man!
+		figlet # Big words!
+		fortune-kind # Kind words of wisdom
+		lolcat # TASTE THE RAINBOW MOTHA FUCKA
+		neofetch # System info display
+		pfetch # Neofetch Jr.
+		pipes # A series of tubes
+		pokemonsay # Pokemon!
+		pokemon-colorscripts-mac
+
+	## Home Manager
 		home-manager
 
-		# Coding
-		nodejs
-		zed-editor # new text editor
-		python3 # programming language
-
-		# CLI
-		neofetch # system info display
-		vim # best editor
-		neovim # bestest editor
-		wget
-		git
-		unzip
-		btop # system monitor
-		nix-index
-		ranger # tui file manager
-		zip
-		yt-dlp # download youtube videos
-		openssl
-		lazygit
-		bluez # bluetooth manager
-		bluez-tools
-		zsh
-
-		#Fun packages
-		cowsay
-		lolcat
-		figlet
-		pipes
-		cbonsai
-		fortune-kind
-		cava
-		cmatrix
-		pfetch
-
-		# Hyprland
-		hyprland
-		xdg-desktop-portal-hyprland
-		waybar # taskbar for hyprland
-		libnotify # for notifications
-		swww # wallpaper manager
-		rofi-wayland # program search
 	];
 
 	fonts.packages = with pkgs; [
