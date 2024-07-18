@@ -42,6 +42,7 @@
 		mullvad-vpn # VPN client
 		pcmanfm # File manager
 		pika-backup # Backup manager
+		newsflash # RSS feed reader for GNOME
 		
 	##Video
 		makemkv # BluRay and DVD ripper
@@ -56,6 +57,10 @@
 		swww # wallpaper manager
 		waybar # taskbar for hyprland
 		xdg-desktop-portal-hyprland
+
+	#====GNOME Extensions==============================#
+
+		
 
 	#====CLI Programs==================================#
 
