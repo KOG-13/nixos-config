@@ -51,8 +51,8 @@
 	#====Hyprland=======================================#
 
 		hyprland
-		libnotify # for notifications
-		mako # notification manager for hyprland (replaces dunst)
+		dunst # notification daemon for hyprland 
+		libnotify # dependency for dunst
 		rofi-wayland # program search
 		swww # wallpaper manager
 		waybar # taskbar for hyprland
