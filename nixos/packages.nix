@@ -11,6 +11,7 @@
 	##Audio
 		audacity # audio editor/mixer
 		puddletag # music file metadata editor
+		spotify
 
 	##Communication
 		discord
@@ -119,6 +120,7 @@
 		font-awesome
 		powerline-fonts
 		powerline-symbols
+		corefonts
 		(nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
 	];
         

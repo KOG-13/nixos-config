@@ -27,6 +27,7 @@
 			v = "nvim";
 
 			pkgs = "nvim ~/nix/nixos/packages.nix";
+			nixadd = "git add --all ~/nix";
 		};
 
 		history.size = 1000;

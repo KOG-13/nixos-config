@@ -9,5 +9,6 @@
 		./steam.nix
 		./user.nix
 		./xserver.nix
+		./nixvim/nixvim.nix
 	];
 }
