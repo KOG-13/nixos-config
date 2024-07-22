@@ -8,6 +8,6 @@
 		enable = true;
 
 		defaultEditor = true;
-		colorscheme.gruvbox.enable = true;
+		colorschemes.gruvbox.enable = true;
 	};
 }
