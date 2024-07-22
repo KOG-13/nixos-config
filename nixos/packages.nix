@@ -38,6 +38,7 @@
 
 	##Tools
 		brave # Web browser
+		firefox
 		gparted # GUI partition manager
 		keepassxc # Locally hosted password manager
 		mullvad-vpn # VPN client
