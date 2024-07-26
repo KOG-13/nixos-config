@@ -30,6 +30,7 @@
 	imports = [
 		./zsh.nix
 		./modules/bundle.nix
+		./bash.nix
 	];
 
 	home = {

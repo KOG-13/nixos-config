@@ -13,6 +13,9 @@
 		puddletag # music file metadata editor
 		spotify
 
+	##Books
+		calibre # ebub e-reader
+
 	##Communication
 		discord
 		thunderbird # email client

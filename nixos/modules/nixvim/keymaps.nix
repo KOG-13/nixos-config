@@ -24,10 +24,17 @@
 				"n" = "nzzzv";
 				"N" = "Nzzzv";
 
+				# Barbar
 				"<leader>n" = ":BufferNext<CR>";
 				"<leader>p" = ":BufferPrevious<CR>";
 				"<leader>x" = ":BufferClose<CR>";
 
+				# Telescope
+				"<leader>ff" = "find_files";
+				"<leader>b" = "buffers";
+				"<leader>fh" = "help_tags";
+				"<leader>gf" = "git_files";
+				"<leader>tg" = ":Telescope live_grep<CR>";
 
 				};
 			visual = 

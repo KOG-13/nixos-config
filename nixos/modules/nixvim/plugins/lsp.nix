@@ -38,6 +38,9 @@
 		installRustc = true;
 
 	};
+	
+	pylsp.enable = true;
+
       };
     };
   };

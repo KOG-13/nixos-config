@@ -39,8 +39,8 @@
   # Automatically delete config versions older than 30 days
   nix.gc = {
 	automatic = true;
-	dates = "weekly";
-	options = "--delete-older-than 30d";
+	dates = "daily";
+	options = "--delete-older-than 7d";
   };
 
   #xdg.portal.enable = true;
@@ -48,6 +48,9 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  #Add ~/.local/bin to PATH
+  environment.localBinInPath = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
