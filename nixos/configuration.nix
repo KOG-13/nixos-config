@@ -3,7 +3,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./packages.nix
+      ./packages/packages.nix
       ./modules/bundle.nix
     ];
 

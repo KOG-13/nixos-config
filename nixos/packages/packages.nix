@@ -114,6 +114,9 @@
 	## Home Manager
 		home-manager
 
+	#====Custom Packages=======================================#	
+		(import ./devflake.nix { inherit pkgs; }) 
+
 	];
 
 	fonts.packages = with pkgs; [

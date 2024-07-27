@@ -3,7 +3,6 @@
 {
     programs.bash = {
 	enable = true;
-	syntaxHighlighting.enable = true;
 	shellAliases = 
 		let
 			flakeDir = "~/nix";
@@ -23,6 +22,7 @@
 
 		pkgs = "nvim ~/nix/nixos/packages.nix";
 		nixadd = "git add --all ~/nix";
+		dev = "nix develop";
 	};
     };
 }
