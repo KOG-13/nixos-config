@@ -11,7 +11,12 @@
 		desktopManager.gnome.enable = true;
 
 		# Configure keymap in X11	
-		layout = "us";
-		xkbVariant = "";	
+		#xkb.layout = "us";
+		#xkb.variant = "";	
+
+		xkb = {
+		    layout = "us";
+		    variant = "";
+		};
 	};
 }

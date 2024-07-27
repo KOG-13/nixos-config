@@ -7,5 +7,6 @@
 		./telescope.nix
 		./transparent.nix
 		./lsp.nix
+		./luasnip.nix
 	];
 }
