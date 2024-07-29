@@ -22,7 +22,7 @@
 			system = "x86_64-linux";
 		in {	
 
-		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+		nixosConfigurations.nixDesktop = nixpkgs.lib.nixosSystem {
 			specialArgs = {
 				pkgs-stable = import nixpkgs-stable {
 					inherit system;
