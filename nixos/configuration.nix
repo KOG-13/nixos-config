@@ -1,4 +1,3 @@
-{ config, pkgs, lib, ... }:
 {
   imports =
     [ 
@@ -7,7 +6,7 @@
       ./modules/bundle.nix
     ];
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixDesktop"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

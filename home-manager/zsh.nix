@@ -26,7 +26,7 @@
 			vim = "nvim";
 			v = "nvim";
 
-			pkgs = "nvim ~/nix/nixos/packages.nix";
+			pkgs = "nvim ~/nix/nixos/packages/packages.nix";
 			nixadd = "git add --all ~/nix";
 			dev = "nix develop";
 		};

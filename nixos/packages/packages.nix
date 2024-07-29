@@ -48,6 +48,7 @@
 		pcmanfm # File manager
 		pika-backup # Backup manager
 		newsflash # RSS feed reader for GNOME
+		xorg.xev # Display key presses and codes
 		
 	##Video
 		makemkv # BluRay and DVD ripper
@@ -56,12 +57,16 @@
 	#====Hyprland=======================================#
 
 		hyprland
+		dolphin # File Manager
 		dunst # notification daemon for hyprland 
 		libnotify # dependency for dunst
 		rofi-wayland # program search
 		swww # wallpaper manager
 		waybar # taskbar for hyprland
 		xdg-desktop-portal-hyprland
+		wev # wayland xev
+		wl-clipboard
+		cliphist
 
 	#====GNOME Extensions==============================#
 
