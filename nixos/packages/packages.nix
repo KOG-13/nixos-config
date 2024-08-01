@@ -17,7 +17,8 @@
 		calibre # ebub e-reader
 
 	##Communication
-		discord
+		#discord
+		vesktop
 		thunderbird # email client
 		zoom-us # zoom chat
 
@@ -49,6 +50,7 @@
 		pika-backup # Backup manager
 		newsflash # RSS feed reader for GNOME
 		xorg.xev # Display key presses and codes
+		syncthing
 		
 	##Video
 		makemkv # BluRay and DVD ripper
@@ -97,7 +99,9 @@
 		gcc # GNU compiler
 		nodejs # Javascript framework
 		python3 # Python programming language
-		rustup # Rust language toolchain installer
+		rustc # Rust 
+		cargo
+		go
 
 	## Daemons
 		mpv # music daemon
