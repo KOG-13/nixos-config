@@ -33,6 +33,7 @@
 	##Gaming
 		# polymc # open source Minecraft launcher
 		steam
+		tetrio-desktop
 
 	##Productivity
 		libreoffice-qt6-still
