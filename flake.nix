@@ -22,23 +22,55 @@
 			system = "x86_64-linux";
 		in {	
 
-		nixosConfigurations.nixDesktop = nixpkgs.lib.nixosSystem {
+		
+		nixosConfigurations = {
+		    "nixDesktop" = nixpkgs.lib.nixosSystem {
 			specialArgs = {
-				pkgs-stable = import nixpkgs-stable {
-					inherit system;
-					config.allowUnfree = true;
-				};
-				inherit inputs system;
+			    pkgs-stable = import nixpkgs-stable {
+				inherit system;
+				config.allowUnfree = true;
+			    };
+			    inherit inputs system;
 			};
-			modules = [ 
-				./nixos/configuration.nix 
-				inputs.nixvim.nixosModules.nixvim
+			modules = [
+			    ./hosts/desktop/nixos/configuration.nix
+			    inputs.nixvim.nixosModules.nixvim
 			];
+		    };
+
+		    "nixLaptop" = nixpkgs.lib.nixosSystem {
+			specialArgs = {
+			    pkgs-stable = import nixpkgs-stable {
+				inherit system;
+				config.allowUnfree = true;
+			    };
+			    inherit inputs system;
+			};
+			modules = [
+			    ./hosts/thinkpad/nixos/configuration.nix
+			    inputs.nixvim.nixosModules.nixvim
+			];
+		    };
+
 		};
 
-		homeConfigurations.kieran = home-manager.lib.homeManagerConfiguration {
+
+		homeConfigurations = {
+		    "kieran@nixDesktop" = home-manager.lib.homeManagerConfiguration {
+			extraSpecialArgs = {
+			    username = "kieran";
+			};
 			pkgs = nixpkgs.legacyPackages.${system};
-			modules = [ ./home-manager/home.nix ];
+			modules = [ ./hosts/desktop/home-manager/home.nix ];
+		    };
+
+		    "kieran@nixLaptop" = home-manager.lib.homeManagerConfiguration {
+			extraSpecialArgs = {
+			    username = "kieran";
+			};
+			pkgs = nixpkgs.legacyPackages.${system};
+			modules = [ ./hosts/thinkpad/home-manager/home.nix ];
+		    };
 		};
 	};
 
