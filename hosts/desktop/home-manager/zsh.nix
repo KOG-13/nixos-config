@@ -6,7 +6,8 @@
 		syntaxHighlighting.enable = true;
 
 		initExtra = ''
-			bash -c 'fortune | pokemonsay'
+			#bash -c 'fortune | pokemonsay'
+			bash -c 'pokemon-colorscripts --random'
 		'';
 
 		shellAliases = 
