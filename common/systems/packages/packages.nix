@@ -33,6 +33,7 @@
 	##Gaming
 		# polymc # open source Minecraft launcher
 		steam
+		tetrio-desktop
 
 	##Productivity
 		libreoffice-qt6-still
@@ -41,6 +42,7 @@
 		zed-editor # New text editor
 
 	##Tools
+		vscode
 		brave # Web browser
 		firefox
 		gparted # GUI partition manager
@@ -51,6 +53,7 @@
 		newsflash # RSS feed reader for GNOME
 		xorg.xev # Display key presses and codes
 		syncthing
+		protonmail-desktop
 		
 	##Video
 		makemkv # BluRay and DVD ripper

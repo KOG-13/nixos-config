@@ -6,7 +6,8 @@
 		syntaxHighlighting.enable = true;
 
 		initExtra = ''
-			bash -c 'fortune | pokemonsay'
+			#bash -c 'fortune | pokemonsay'
+			bash -c 'pokemon-colorscripts --random'
 		'';
 
 		shellAliases = 
@@ -14,9 +15,9 @@
 				flakeDir = "~/nix";
 			in {
 
-			rebuild = "sudo nixos-rebuild switch --flake ${flakeDir}";
-			update = "nix flake update ${flakeDir}";
-			upgrade = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
+			#rebuild = "sudo nixos-rebuild switch --flake ${flakeDir}";
+			#update = "nix flake update ${flakeDir}";
+			#upgrade = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
 			hms = "home-manager switch --flake ${flakeDir}";
 
 			ll = "ls -l";
@@ -26,7 +27,7 @@
 			vim = "nvim";
 			v = "nvim";
 
-			pkgs = "nvim ~/nix/nixos/packages/packages.nix";
+			pkgs = "nvim ~/nix/common/systems/packages/packages.nix";
 			nixadd = "git add --all ~/nix";
 			dev = "nix develop";
 		};

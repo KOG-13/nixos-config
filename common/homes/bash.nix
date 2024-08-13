@@ -8,9 +8,9 @@
 			flakeDir = "~/nix";
 		in {
 
-		rebuild = "sudo nixos-rebuild switch --flake ${flakeDir}";
-		update = "nix flake update ${flakeDir}";
-		upgrade = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
+		#rebuild = "sudo nixos-rebuild switch --flake ${flakeDir}";
+		#update = "nix flake update ${flakeDir}";
+		#upgrade = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
 		hms = "home-manager switch --flake ${flakeDir}";
 
 		ll = "ls -l";
