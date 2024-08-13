@@ -24,8 +24,9 @@
 
 		
 		nixosConfigurations = {
-		    "nixDesktop" = nixpkgs.lib.nixosSystem {
+		    "desktop" = nixpkgs.lib.nixosSystem {
 			specialArgs = {
+			    hostname = "desktop";
 			    pkgs-stable = import nixpkgs-stable {
 				inherit system;
 				config.allowUnfree = true;
@@ -33,13 +34,15 @@
 			    inherit inputs system;
 			};
 			modules = [
-			    ./hosts/desktop/nixos/configuration.nix
+			    ./common/systems/configuration.nix
+			    ./systems/desktop/default.nix
 			    inputs.nixvim.nixosModules.nixvim
 			];
 		    };
 
-		    "nixLaptop" = nixpkgs.lib.nixosSystem {
+		    "system76" = nixpkgs.lib.nixosSystem {
 			specialArgs = {
+			    hostname = "system76";
 			    pkgs-stable = import nixpkgs-stable {
 				inherit system;
 				config.allowUnfree = true;
@@ -47,7 +50,24 @@
 			    inherit inputs system;
 			};
 			modules = [
-			    ./hosts/thinkpad/nixos/configuration.nix
+			    ./common/systems/configuration.nix
+			    ./systems/system76/default.nix
+			    inputs.nixvim.nixosModules.nixvim
+			];
+		    };
+
+		    "thinkpad" = nixpkgs.lib.nixosSystem {
+			specialArgs = {
+			    hostname = "thinkpad";
+			    pkgs-stable = import nixpkgs-stable {
+				inherit system;
+				config.allowUnfree = true;
+			    };
+			    inherit inputs system;
+			};
+			modules = [
+			    ./common/systems/configuration.nix
+			    ./systems/thinkpad/default.nix
 			    inputs.nixvim.nixosModules.nixvim
 			];
 		    };
@@ -56,20 +76,39 @@
 
 
 		homeConfigurations = {
-		    "kieran@nixDesktop" = home-manager.lib.homeManagerConfiguration {
+		    "kieran@desktop" = home-manager.lib.homeManagerConfiguration {
 			extraSpecialArgs = {
 			    username = "kieran";
 			};
 			pkgs = nixpkgs.legacyPackages.${system};
-			modules = [ ./hosts/desktop/home-manager/home.nix ];
+			modules = [ 
+			    ./common/homes/home.nix
+			    ./homes/desktop/home.nix
+			];
+
 		    };
 
-		    "kieran@nixLaptop" = home-manager.lib.homeManagerConfiguration {
+		    
+		    "kieran@system76" = home-manager.lib.homeManagerConfiguration {
 			extraSpecialArgs = {
 			    username = "kieran";
 			};
 			pkgs = nixpkgs.legacyPackages.${system};
-			modules = [ ./hosts/thinkpad/home-manager/home.nix ];
+			modules = [ 
+			    ./common/homes/home.nix
+			    ./homes/system76/home.nix
+			];
+		    };
+
+		    "kieran@thinkpad" = home-manager.lib.homeManagerConfiguration {
+			extraSpecialArgs = {
+			    username = "kieran";
+			};
+			pkgs = nixpkgs.legacyPackages.${system};
+			modules = [ 
+			    ./common/homes/home.nix
+			    ./homes/thinkpad/home.nix
+			];
 		    };
 		};
 	};
