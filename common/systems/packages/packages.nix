@@ -83,6 +83,7 @@
 		kitty # Terminal emulator
 		nix-index # A files database for nixpkgs
 		zsh # Terminal shell
+		starship # Makes zsh look nice
 	##Productivity
 		bluez # bluetooth manager
 		bluez-tools # Additional tools to manage bluetooth devices

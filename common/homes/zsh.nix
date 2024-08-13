@@ -34,11 +34,13 @@
 
 		history.size = 1000;
 		history.path = "${config.xdg.dataHome}/zsh/history";
+		history.share = true;
 
-		oh-my-zsh = {
-			enable = true;
-			plugins = [ "git" "sudo" ];
-			theme = "agnoster";
-		};
+
+		#oh-my-zsh = {
+		#	enable = true;
+		#	plugins = [ "git" "sudo" "vi-mode" ];
+		#	theme = "agnoster";
+		#};
 	};
 }
