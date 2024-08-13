@@ -50,6 +50,9 @@
   #Add ~/.local/bin to PATH
   environment.localBinInPath = true;
 
+  #Get completion for system packages (e.g. systemd). Added for additional fzf config
+  environment.pathsToLink = [ "/share/zsh" ];
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 

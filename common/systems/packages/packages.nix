@@ -84,6 +84,9 @@
 		nix-index # A files database for nixpkgs
 		zsh # Terminal shell
 		starship # Makes zsh look nice
+		zplug # zsh plugins
+		fzf # fuzzy finder
+		zoxide # powerful cd
 	##Productivity
 		bluez # bluetooth manager
 		bluez-tools # Additional tools to manage bluetooth devices

@@ -1,13 +1,40 @@
-{ config, ... }: {
+{ config, pkgs, ... }: {
 	programs.zsh = {
 		enable = true;
-		enableCompletion = true;
+		enableCompletion = false;
 		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
 
+
+		history.size = 5000;
+		history.path = "${config.xdg.dataHome}/zsh/history";
+		history.share = true;
+
+		zplug = {
+		    enable = true;
+		    plugins = [
+			{ name = "xvoland/Extract"; } 
+			{ name = "softmoth/zsh-vim-mode"; }
+			{ name = "Aloxaf/fzf-tab"; }
+		    ];
+		};
+
+
 		initExtra = ''
 			#bash -c 'fortune | pokemonsay'
-			bash -c 'pokemon-colorscripts --random'
+
+
+			if [ -f ~/nix/common/homes/modules/initFzf.sh ]; then
+			    bash ~/nix/common/homes/modules/initFzf.sh 
+			fi
+
+			zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+
+			# Shell integrations
+			eval "$(fzf --zsh)"
+			eval "$(zoxide init zsh)"
+
+			pokemon-colorscripts --random
 		'';
 
 		shellAliases = 
@@ -26,21 +53,14 @@
 
 			vim = "nvim";
 			v = "nvim";
+			vf = "vim $(fzf)";
 
 			pkgs = "nvim ~/nix/common/systems/packages/packages.nix";
-			nixadd = "git add --all ~/nix";
+			nixadd = "git -C ~/nix add --all";
 			dev = "nix develop";
 		};
 
-		history.size = 1000;
-		history.path = "${config.xdg.dataHome}/zsh/history";
-		history.share = true;
 
 
-		#oh-my-zsh = {
-		#	enable = true;
-		#	plugins = [ "git" "sudo" "vi-mode" ];
-		#	theme = "agnoster";
-		#};
 	};
 }
