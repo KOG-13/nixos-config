@@ -54,6 +54,7 @@
 		xorg.xev # Display key presses and codes
 		syncthing
 		protonmail-desktop
+		screenkey 
 		
 	##Video
 		makemkv # BluRay and DVD ripper
@@ -87,6 +88,7 @@
 		zplug # zsh plugins
 		fzf # fuzzy finder
 		zoxide # powerful cd
+		kanata # keyboard remapper (for using esc in vim)
 	##Productivity
 		bluez # bluetooth manager
 		bluez-tools # Additional tools to manage bluetooth devices
