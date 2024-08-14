@@ -89,6 +89,7 @@
 		fzf # fuzzy finder
 		zoxide # powerful cd
 		kanata # keyboard remapper (for using esc in vim)
+		tmux
 	##Productivity
 		bluez # bluetooth manager
 		bluez-tools # Additional tools to manage bluetooth devices
