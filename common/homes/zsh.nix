@@ -53,9 +53,12 @@
 			#upgrade = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
 			hms = "home-manager switch --flake ${flakeDir}";
 
-			ll = "ls -l";
+			ls = "lsd";
+			ll = "lsd -l";
 			cdl = "cd && clear";
 			cl = "clear";
+
+			zl = "z && clear";
 
 			vim = "nvim";
 			v = "nvim";

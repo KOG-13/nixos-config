@@ -11,3 +11,5 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 4. - [ ] tmux
 5. - [ ] hyprland
 6. - [ ] default config for new devices
+7. - [ ] ssh setup
+8. - [ ] disko setup

@@ -90,6 +90,7 @@
 		zoxide # powerful cd
 		kanata # keyboard remapper (for using esc in vim)
 		tmux
+		lsd
 	##Productivity
 		bluez # bluetooth manager
 		bluez-tools # Additional tools to manage bluetooth devices
