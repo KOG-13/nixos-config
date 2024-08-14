@@ -10,3 +10,4 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 3. - [ ] nixvim
 4. - [ ] tmux
 5. - [ ] hyprland
+6. - [ ] default config for new devices
