@@ -34,6 +34,7 @@
 		# polymc # open source Minecraft launcher
 		steam
 		tetrio-desktop
+		linuxKernel.packages.linux_zen.xpadneo
 
 	##Productivity
 		libreoffice-qt6-still
