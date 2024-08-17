@@ -13,3 +13,4 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 6. - [ ] default config for new devices
 7. - [ ] ssh setup
 8. - [ ] disko setup
+9. - [ ] firefox config

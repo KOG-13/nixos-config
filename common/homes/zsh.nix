@@ -64,6 +64,8 @@
 			v = "nvim";
 			vf = "vim $(fzf)";
 
+			fetch = "fastfetch";
+
 			pkgs = "nvim ~/nix/common/systems/packages/packages.nix";
 			nixadd = "git -C ~/nix add --all";
 			nixstatus = "git -C ~/nix status";

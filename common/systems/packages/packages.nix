@@ -126,7 +126,8 @@
 		figlet # Big words!
 		fortune-kind # Kind words of wisdom
 		lolcat # TASTE THE RAINBOW MOTHA FUCKA
-		neofetch # System info display
+		#neofetch # System info display
+		fastfetch
 		pfetch # Neofetch Jr.
 		pipes # A series of tubes
 		pokemonsay # Pokemon!
