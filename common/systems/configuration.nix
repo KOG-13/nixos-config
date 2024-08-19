@@ -53,6 +53,9 @@
   #Get completion for system packages (e.g. systemd). Added for additional fzf config
   environment.pathsToLink = [ "/share/zsh" ];
 
+  # Automatically detecting blu-ray drive
+  boot.kernelModules = ["sg"];
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 

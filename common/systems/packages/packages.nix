@@ -35,6 +35,8 @@
 		steam
 		tetrio-desktop
 		linuxKernel.packages.linux_zen.xpadneo
+		#minecraft
+		atlauncher # Minecraft Launcher
 
 	##Productivity
 		libreoffice-qt6-still
@@ -56,10 +58,14 @@
 		syncthing
 		protonmail-desktop
 		screenkey 
+		usbutils # additional tools for cli
 		
 	##Video
 		makemkv # BluRay and DVD ripper
 		vlc # Video player
+		libbluray # Library to access Blu-Ray disks for playback
+		libaacs # Library to access AACS protected Blu-Ray disks
+		handbrake # Tool for encoding video files 
 
 	#====Hyprland=======================================#
 
