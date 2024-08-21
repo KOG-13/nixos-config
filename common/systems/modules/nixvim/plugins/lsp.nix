@@ -23,7 +23,7 @@
       enable = true;
       servers = {
       	# Javascript / typescript
-	tsserver.enable = true;
+	#tsserver.enable = true;
 
 	# Lua
 	lua-ls = {
@@ -43,17 +43,17 @@
 	cmake.enable = true;
 
 	# CSS
-	cssls.enable = true;
+	#cssls.enable = true;
 
 	# Golang
 	gopls.enable = true;
 	#golangci_lint_ls.enable = true;
 
 	# HTML
-	html.enable = true;
+	#html.enable = true;
 
 	# HTMX
-	htmx.enable = true;
+	#htmx.enable = true;
 	
 	#Nix 
 	nixd.enable = true;	
@@ -68,10 +68,10 @@
 	sqls.enable = true;
 
 	# Svelte
-	svelte.enable = true;
+	#svelte.enable = true;
 
 	# Tailwind
-	tailwindcss.enable = true;
+	#tailwindcss.enable = true;
 
       };
     };

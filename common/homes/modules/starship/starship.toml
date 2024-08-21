@@ -28,6 +28,7 @@ truncation_symbol = "…/"
 "Music" = " "
 "Pictures" = " "
 "Dev" = " "
+"SynologyDrive" = " "
 
 [git_branch]
 symbol = ""

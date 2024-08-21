@@ -45,7 +45,6 @@
 		zed-editor # New text editor
 
 	##Tools
-		vscode
 		brave # Web browser
 		firefox
 		gparted # GUI partition manager
@@ -59,6 +58,10 @@
 		protonmail-desktop
 		screenkey 
 		usbutils # additional tools for cli
+		synology-drive-client 
+		qemu
+		virt-manager
+		libvirt
 		
 	##Video
 		makemkv # BluRay and DVD ripper
