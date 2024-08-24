@@ -19,6 +19,7 @@
 	##Communication
 		#discord
 		vesktop
+		discord
 		thunderbird # email client
 		zoom-us # zoom chat
 
@@ -62,6 +63,7 @@
 		qemu
 		virt-manager
 		libvirt
+		resources # Task manager-esque 
 		
 	##Video
 		makemkv # BluRay and DVD ripper
