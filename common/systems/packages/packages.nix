@@ -36,7 +36,6 @@
 		steam
 		tetrio-desktop
 		linuxKernel.packages.linux_zen.xpadneo
-		#minecraft
 		atlauncher # Minecraft Launcher
 
 	##Productivity
