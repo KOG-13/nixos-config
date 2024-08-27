@@ -61,6 +61,8 @@
 
 			zl = "z && clear";
 
+			cal = "firefox --new-window 'https://calendar.google.com/'";
+
 			vim = "nvim";
 			v = "nvim";
 			vf = "vim $(fzf)";

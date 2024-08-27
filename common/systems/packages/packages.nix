@@ -102,6 +102,7 @@
 		kanata # keyboard remapper (for using esc in vim)
 		tmux
 		lsd
+		cool-retro-term
 	##Productivity
 		bluez # bluetooth manager
 		bluez-tools # Additional tools to manage bluetooth devices
