@@ -37,13 +37,17 @@
 		tetrio-desktop
 		linuxKernel.packages.linux_zen.xpadneo
 		atlauncher # Minecraft Launcher
+		mgba
+		desmume
+		snes9x
+
 
 	##Productivity
 		libreoffice-qt6-still
 		mysql-workbench # MySQL editor
 		obsidian # Markdown editor
 		zed-editor # New text editor
-
+		jetbrains.rust-rover
 	##Tools
 		brave # Web browser
 		firefox

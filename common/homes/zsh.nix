@@ -72,7 +72,7 @@
 			pkgs = "nvim ~/nix/common/systems/packages/packages.nix";
 			nixadd = "git -C ~/nix add --all";
 			nixstatus = "git -C ~/nix status";
-			dev = "nix develop";
+			dev = "nix develop --command zsh";
 		};
 
 
