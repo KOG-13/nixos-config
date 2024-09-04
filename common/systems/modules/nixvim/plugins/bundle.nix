@@ -1,5 +1,6 @@
 {
 	imports = [
+		#./alpha.nix
                 ./barbar.nix
 		./cmp.nix
 		./emmet.nix

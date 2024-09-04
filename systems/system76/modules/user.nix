@@ -7,7 +7,7 @@
 		users.kieran = {	
 			isNormalUser = true;
 			description = "Kieran";
-			extraGroups = [ "networkmanager" "wheel" "input" "uinput" "libvirtd" ];
+			extraGroups = [ "audio" "networkmanager" "wheel" "input" "uinput" "libvirtd" ];
 			packages = with pkgs; []; # just in case
 		};
 	};
