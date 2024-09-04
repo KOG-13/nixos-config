@@ -69,6 +69,8 @@
 
 			fetch = "fastfetch";
 
+			kanata-fix = "modprobe uinput"; # in case kanata stops being enabled, run this
+
 			pkgs = "nvim ~/nix/common/systems/packages/packages.nix";
 			nixadd = "git -C ~/nix add --all";
 			nixstatus = "git -C ~/nix status";
