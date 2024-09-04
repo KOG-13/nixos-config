@@ -129,6 +129,7 @@
 		rustc # Rust 
 		cargo
 		go
+		cmake
 
 	## Daemons
 		mpv # music daemon
