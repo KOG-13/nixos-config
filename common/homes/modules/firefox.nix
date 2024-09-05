@@ -11,15 +11,14 @@
 		    privateDefault = "DuckDuckGo";
 		    order = ["DuckDuckGo" "Google"];
 		};
-		extensions = with pkgs.inputs.firefox-addons; [
+		/*extensions = with pkgs.inputs.firefox-addons; [
 		    ublock-origin
 		    reddit-enhancement-suite
 		    unhook
 
-		];
+		];*/
 	    };
 	};
-	enableGnomeExtensions = true;
 
     };
 }
