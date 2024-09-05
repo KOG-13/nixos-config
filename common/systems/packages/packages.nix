@@ -74,6 +74,7 @@
 		libbluray # Library to access Blu-Ray disks for playback
 		libaacs # Library to access AACS protected Blu-Ray disks
 		handbrake # Tool for encoding video files 
+		freetube
 
 	#====Hyprland=======================================#
 
