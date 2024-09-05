@@ -6,7 +6,7 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 
 ## Configuration Goals
 1. - [X] zsh
-2. - [ ] dev flake templates
+2. - [X] dev flake templates see [templates](https://github.com/Kogara13/templates)
 3. - [ ] nixvim
 4. - [ ] tmux
 5. - [ ] hyprland
