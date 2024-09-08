@@ -5,40 +5,128 @@
 	enable = true;
 	#programs.firefox.profiles.<name>.bookmarks
 	profiles.kieran = {
-		bookmarks = [
-		    {
-			name = "Unraid";
-			toobar = true;
-			bookmarks = [
-			    {
-				name = "Tower/Main";
-				url = "http://192.168.1.150/";
-			    }
-			    {
+	    bookmarks = [
+		{
+		    name = "Bookmarks Toolbar";
+		    toolbar = true;
+		    bookmarks = [
+			{
+			    name = "Unraid";
+			    bookmarks = [
+				{
+					name = "Tower/Main";
+					url = "http://192.168.1.150/";
+				}
+
+				{
 				name = "Photoprism";
 				url = "http://192.168.1.150:2342/";
-			    }	
-			    {
+				}
+
+				{
 				name = "Jellyfin";
 				url = "http://192.168.1.150:8096/";
-			    }
-			];
-		    }
-		    {
-			name = "Synology";
-			toolbar = true;
-			bookmarks = [
-			    {
-				name = "Synology";
-				url = "http://192.168.1.68:5000/";
-			    }	
-			    {
-				name = "Syncthing";
-				url = "http://127.0.0.1:8384/#";
-			    }
-			];
-		    }
-		];
+				}
+			    ];
+			}
+
+			{
+			    name = "Coding";
+			    bookmarks = [
+				{
+				    name = "webdev";
+				    bookmarks = [
+					{
+					    name = "CSS Diner";
+					    url = "https://flukeout.github.io/#";
+					}
+
+					{
+					    name = "Flexbox Froggy";
+					    url = "https://flexboxfroggy.com/";
+					}
+
+					{
+					    name = "CSS Properties";
+					    url = "https://css-tricks.com/almanac/properties/";
+					}
+
+					{
+					    name = "Font Awesome Icons";
+					    url = "https://fontawesome.com/search";
+					}
+
+					{
+					    name = "React Libraries";
+					    bookmarks = [
+						{
+						    name = "Prettier";
+						    url =
+						    "https://prettier.io/docs/en/options.html#arrow-function-parentheses";
+						}
+
+						{
+						    name = "Typescript Config";
+						    url = "https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports";
+						}
+
+						{
+						    name = "Yarn Search";
+						    url = "https://yarnpkg.com/";
+						}
+
+						{
+						    name = "React Spring";
+						    url = "https://yarnpkg.com/";
+						}
+					    ];
+					}
+				    ];
+				}
+			    ];
+			}
+
+			{
+			    name = "Synology";
+			    bookmarks = [
+				{
+				    name = "Synology";
+				    url = "http://192.168.1.68:5000/";
+				}
+
+				{
+				    name = "Syncthing";
+				    url = "http://127.0.0.1:8384/#";
+				}
+
+			    ];
+			}
+
+			{
+			    name = "School";
+			    bookmarks = [
+				{
+				    name = "Homepage";
+				    url = "https://my.liu.edu/";
+				}
+
+				{
+				    name = "Homepage - Long Island University";
+				    url = "https://lms.liu.edu/d2l/home";
+				}
+
+				{
+				    name = "Udemy";
+				    url = "https://www.udemy.com/";
+				}
+			    ];
+			}
+		    ];
+		}
+	    ];
+
+
+		
 		search = {
 		    force = true;
 		    default = "DuckDuckGo";
@@ -47,6 +135,8 @@
 		};
 
 		settings = {
+
+
 		    # I basically just went to "about:config" and entered any modified preferences that seemed right
 		    "browser.search.region" = "US";
 		    "browser.startup.page" = 1;
@@ -208,12 +298,7 @@
 		    # Privacy
 
 		};
-		/*extensions = with pkgs.inputs.firefox-addons; [
-		    ublock-origin
-		    reddit-enhancement-suite
-		    unhook
 
-		];*/
-	    };
-	}; 
+	};
+    }; 
 }
