@@ -47,7 +47,10 @@
 		mysql-workbench # MySQL editor
 		obsidian # Markdown editor
 		zed-editor # New text editor
-		jetbrains.rust-rover
+		jetbrains.idea-community
+		rstudio
+		android-studio
+		android-studio-tools 
 	##Tools
 		brave # Web browser
 		firefox
@@ -131,6 +134,8 @@
 		cargo
 		go
 		cmake
+		R
+		kotlin
 
 	## Daemons
 		mpv # music daemon
