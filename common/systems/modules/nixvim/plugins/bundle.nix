@@ -6,7 +6,7 @@
 		./emmet.nix
 		./lualine.nix
 		./neotree.nix
-		./rustaceanvim.nix
+		#./rustaceanvim.nix
 		./telescope.nix
 		./transparent.nix
 		./lsp.nix

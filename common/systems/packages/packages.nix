@@ -136,6 +136,16 @@
 		cmake
 		R
 		kotlin
+		(python311.withPackages (ps: with ps; [
+		    numpy
+		    scipy
+		    pandas
+		    jupyterlab
+		    statsmodels
+		    scikitlearn
+		    matplotlib
+		    opencv
+		]))
 
 	## Daemons
 		mpv # music daemon
