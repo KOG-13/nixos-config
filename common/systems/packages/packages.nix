@@ -70,6 +70,7 @@
 		virt-manager
 		libvirt
 		resources # Task manager-esque 
+		gnome-multi-writer
 		
 	##Video
 		makemkv # BluRay and DVD ripper
