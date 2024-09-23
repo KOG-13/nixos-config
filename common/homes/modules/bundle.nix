@@ -5,7 +5,7 @@
 		./starship/starship.nix
 		./kitty.nix
 		./wms/hyprland.nix
-		#./firefox.nix
+		#./firefox/firefox.nix
 	];
 
 

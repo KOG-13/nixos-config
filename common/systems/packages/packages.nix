@@ -4,7 +4,12 @@
 		permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
 	};
 
-	environment.systemPackages = with pkgs; [
+	environment.systemPackages = with pkgs; 
+	let 
+	    RStudio-with-my-packages = rstudioWrapper.override{
+		packages = with rPackages; [ dplyr ggplot2 hash ]; };
+	in
+	[
 
 	#====Desktop apps==============================#	
 
@@ -48,7 +53,6 @@
 		obsidian # Markdown editor
 		zed-editor # New text editor
 		jetbrains.idea-community
-		rstudio
 		android-studio
 		android-studio-tools 
 	##Tools
@@ -71,6 +75,7 @@
 		libvirt
 		resources # Task manager-esque 
 		gnome-multi-writer
+		vivaldi
 		
 	##Video
 		makemkv # BluRay and DVD ripper
@@ -135,7 +140,7 @@
 		cargo
 		go
 		cmake
-		R
+		RStudio-with-my-packages
 		kotlin
 		(python311.withPackages (ps: with ps; [
 		    numpy
