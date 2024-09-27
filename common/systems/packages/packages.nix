@@ -7,7 +7,19 @@
 	environment.systemPackages = with pkgs; 
 	let 
 	    RStudio-with-my-packages = rstudioWrapper.override{
-		packages = with rPackages; [ dplyr ggplot2 hash ]; };
+		packages = with rPackages; [ 
+		    dplyr 
+		    ggplot2 
+		    hash 
+		    tidyverse 
+		    fastDummies 
+		    devtools 
+		    forecast 
+		    treemapify
+		    Hmisc
+		    corrgram
+		]; 
+	    };
 	in
 	[
 
