@@ -4,6 +4,7 @@
 		./environment.nix
 		./kanata.nix
 		./hyprland.nix
+		./mysql.nix
 		./networkManager.nix
 		./sound.nix
 		./steam.nix

@@ -62,6 +62,7 @@
 	##Productivity
 		libreoffice-qt6-still
 		mysql-workbench # MySQL editor
+		mysql84
 		obsidian # Markdown editor
 		zed-editor # New text editor
 		jetbrains.idea-community
