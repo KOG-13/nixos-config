@@ -64,7 +64,6 @@
 		mysql-workbench # MySQL editor
 		mysql84
 		obsidian # Markdown editor
-		zed-editor # New text editor
 		jetbrains.idea-community
 		android-studio
 		android-studio-tools 
@@ -163,7 +162,7 @@
 		    statsmodels
 		    scikitlearn
 		    matplotlib
-		    opencv
+		    opencv4
 		]))
 
 	## Daemons

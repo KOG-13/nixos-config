@@ -11,5 +11,6 @@
 		./transparent.nix
 		./lsp.nix
 		./luasnip.nix
+		./webdevicons.nix
 	];
 }
