@@ -55,23 +55,6 @@
 			    inputs.nixvim.nixosModules.nixvim
 			];
 		    };
-
-		    "thinkpad" = nixpkgs.lib.nixosSystem {
-			specialArgs = {
-			    hostname = "thinkpad";
-			    pkgs-stable = import nixpkgs-stable {
-				inherit system;
-				config.allowUnfree = true;
-			    };
-			    inherit inputs system;
-			};
-			modules = [
-			    ./common/systems/configuration.nix
-			    ./systems/thinkpad/default.nix
-			    inputs.nixvim.nixosModules.nixvim
-			];
-		    };
-
 		};
 
 
@@ -85,7 +68,6 @@
 			    ./common/homes/home.nix
 			    ./homes/desktop/home.nix
 			];
-
 		    };
 
 		    
@@ -97,17 +79,6 @@
 			modules = [ 
 			    ./common/homes/home.nix
 			    ./homes/system76/home.nix
-			];
-		    };
-
-		    "kieran@thinkpad" = home-manager.lib.homeManagerConfiguration {
-			extraSpecialArgs = {
-			    username = "kieran";
-			};
-			pkgs = nixpkgs.legacyPackages.${system};
-			modules = [ 
-			    ./common/homes/home.nix
-			    ./homes/thinkpad/home.nix
 			];
 		    };
 		};
