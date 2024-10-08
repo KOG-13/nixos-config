@@ -24,10 +24,10 @@
 
 		
 		nixosConfigurations = {
-		    "desktop" = nixpkgs-stable.lib.nixosSystem {
+		    "desktop" = nixpkgs.lib.nixosSystem {
 			specialArgs = {
 			    hostname = "desktop";
-			    pkgs-stable = import nixpkgs-stable {
+			    pkgs-stable = import nixpkgs {
 				inherit system;
 				config.allowUnfree = true;
 			    };
@@ -43,7 +43,7 @@
 		    "system76" = nixpkgs.lib.nixosSystem {
 			specialArgs = {
 			    hostname = "system76";
-			    pkgs-stable = import nixpkgs-stable {
+			    pkgs-stable = import nixpkgs {
 				inherit system;
 				config.allowUnfree = true;
 			    };
