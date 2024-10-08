@@ -18,6 +18,9 @@
 		    treemapify
 		    Hmisc
 		    corrgram
+		    gains
+		    ROCR
+		    caret
 		]; 
 	    };
 	in
@@ -187,7 +190,8 @@
 		home-manager
 
 	#====Custom Packages=======================================#	
-		(import ./devflake.nix { inherit pkgs; }) 
+		#(import ./devflake.nix { inherit pkgs; }) 
+		# Example of creating custom package from .nix file
 
 	];
 
