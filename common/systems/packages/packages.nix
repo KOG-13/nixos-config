@@ -60,6 +60,7 @@
 		mgba
 		desmume
 		snes9x
+		pokemmo-installer
 
 
 	##Productivity
@@ -90,7 +91,12 @@
 		libvirt
 		resources # Task manager-esque 
 		gnome-multi-writer
-		vivaldi
+		(vivaldi.overrideAttrs
+		    (oldAttrs: {
+			dontWrapQtApps = false;
+			dontPatchELF = true;
+			nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [pkgs.kdePackages.wrapQtAppsHook];
+		    }))
 		
 	##Video
 		makemkv # BluRay and DVD ripper
