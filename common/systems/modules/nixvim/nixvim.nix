@@ -10,6 +10,7 @@
 		enable = true;
 
 		defaultEditor = true;
-		colorschemes.gruvbox.enable = true;
+		#colorschemes.gruvbox.enable = true;
+		colorschemes.kanagawa.enable = true;
 	};
 }

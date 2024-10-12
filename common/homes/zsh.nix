@@ -75,6 +75,8 @@
 			nixadd = "git -C ~/nix add --all";
 			nixstatus = "git -C ~/nix status";
 			dev = "nix develop --command zsh";
+
+			pipes = "pipes.sh";
 		};
 
 
