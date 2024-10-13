@@ -28,59 +28,75 @@
 	[
 		### Main Packages ###
 
+	    #A
 		android-studio # Android development IDE
 		    android-studio-tools # additional tools for Android Studio
 		aseprite # pixel art creation tool
 		atlauncher # minecraft launcher
 		audacity # audio editor/mixer
+	    #B
 		blender # 3D modeling software
 		blockbench # voxel modeling software
 		bluez # bluetooth manager
 		    bluez-tools # Additional tools to manage bluetooth devices
 		btop # TUI system monitor
+	    #C
 		calibre # ebub e-reader
 		cava # Audio visualizer
 		cbonsai # For people who kill real plants
 		cmatrix # RAM Eater 3000
 		cool-retro-term
 		cowsay # Don't have a cow, man!
+	    #D
 		desmume # DSI emulator
 		discord # just in case		    
 		    vesktop # better discord for linux
+	    #E 
+	    #F
 		fastfetch
 		figlet # Big words!
 		firefox
 		fortune-kind # Kind words of wisdom
 		freetube # youtube client 	
 		fzf # fuzzy finder
+	    #G
 		gimp # FOSS Photoshop
 		git # Version control manager
 		gnome-multi-writer # GUI USB flasher
 		godot_4 # game development platform
 		gparted # GUI partition manager
+	    #H
 		handbrake # tool for encoding video files 
 		home-manager
+	    #I 
+	    #J
 		jetbrains.idea-community # Java/Kotlin IDE
+	    #K
 		kanata # keyboard remapper (for using esc in vim)
 		keepassxc # locally hosted password manager
 		kitty # Terminal emulator
 		krita # drawing program
+	    #L
 		lazygit # TUI for git commands
 		libaacs # library to access AACS protected Blu-Ray disks
 		libbluray # library to access Blu-Ray disks for playback
 		libreoffice-qt6-still # LibreOffice program suite
 		lolcat # TASTE THE RAINBOW MOTHA FUCKA
 		lsd
+	    #M
 		makemkv # BluRay and DVD ripper
 		mgba # game boy advance emulator
 		mullvad-vpn # VPN client
 		mpv # music daemon
 		mysql-workbench # MySQL editor
+	    #N
 		neovim # best editor
 		newsflash # RSS feed reader for GNOME
 		nix-index # A files database for nixpkgs
+	    #O
 		obsidian # Markdown editor
 		openssl # Library for SSL and TLD protocols
+	    #P
 		pcmanfm # file manager
 		pfetch # Neofetch Jr.
 		pika-backup # home directory backup manager
@@ -90,8 +106,11 @@
 		pokemonsay # Pokemon!
 		protonmail-desktop # desktop client for proton mail
 		puddletag # music file metadata editor
+	    #Q 
+	    #R
 		ranger # TUI file manager
 		resources # task manager-esque 
+	    #S
 		screenkey # key press display for hyprland
 		snes9x # SNES emulator
 		spotify # music streaming service
@@ -100,10 +119,13 @@
 		starship # Makes zsh look nice
 		syncthing # file synchronization tool
 		synology-drive-client # file synchronizion for Synology NAS 
+	    #T
 		thunderbird # email client
 		tmux
+	    #U
 		unzip # Zip file extracter
 		usbutils # additional tools for cli
+	    #V
 		vim # better editor
 		virt-manager
 		    qemu  
@@ -115,9 +137,13 @@
 			nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [pkgs.kdePackages.wrapQtAppsHook];
 		    }))
 		vlc # video player
+	    #W
 		wget # File retrieval for HTTP/S, FTP
+	    #X
 		xorg.xev # display key presses and codes
+	    #Y
 		yt-dlp # CLI for downloading youtube videos
+	    #Z
 		zip # File compressor/archiver
 		zoom-us # zoom chat
 		zoxide # powerful cd

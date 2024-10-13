@@ -23,7 +23,7 @@
       enable = true;
       servers = {
       	# Javascript / typescript
-	#ts-ls.enable = true;
+	tsserver.enable = true;
 
 	# Lua
 	lua-ls = {
