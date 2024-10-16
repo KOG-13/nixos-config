@@ -9,6 +9,7 @@
 	    ### RStudio with packages ###
 	    RStudio-with-my-packages = rstudioWrapper.override{
 		packages = with rPackages; [ 
+		    amap
 		    dplyr 
 		    ggplot2 
 		    hash 
@@ -16,6 +17,7 @@
 		    fastDummies 
 		    devtools 
 		    forecast 
+		    mlbench
 		    treemapify
 		    Hmisc
 		    corrgram
