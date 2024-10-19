@@ -190,6 +190,7 @@
 		    jupyterlab
 		    statsmodels
 		    scikitlearn
+		    seaborn
 		    matplotlib
 		    opencv4
 		]))
