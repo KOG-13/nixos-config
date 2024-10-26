@@ -8,6 +8,7 @@
 		./networkManager.nix
 		./sound.nix
 		./steam.nix
+		./tmux.nix
 		./xserver.nix
 		./nixvim/nixvim.nix
 	];
