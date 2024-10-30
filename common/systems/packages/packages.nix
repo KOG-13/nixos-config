@@ -6,7 +6,6 @@
 
 	environment.systemPackages = with pkgs; 
 	let 
-	    system = "x86_64-linux";
 	    ### RStudio with packages ###
 	    RStudio-with-my-packages = rstudioWrapper.override{
 		packages = with rPackages; [ 
@@ -115,6 +114,7 @@
 	    #R
 		ranger # TUI file manager
 		resources # task manager-esque 
+    ripgrep
 	    #S
 		screenkey # key press display for hyprland
 		snes9x # SNES emulator

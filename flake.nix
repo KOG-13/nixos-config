@@ -51,7 +51,6 @@
 			modules = [
 			    ./common/systems/configuration.nix
 			    ./systems/system76/default.nix
-			    inputs.nixvim.nixosModules.nixvim
 			];
 		    };
 		};
