@@ -8,11 +8,11 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 1. - [X] zsh
 2. - [X] dev flake templates (see: [templates](https://github.com/Kogara13/templates))
 3. - [ ] firefox config (For the sake of your sanity, SPLIT YOUR BOOKMARKS ACROSS MULTIPLE FILES)
-4. - [ ] tmux
+4. - [X] tmux
 5. - [ ] hyprland
 6. - [ ] default config for new devices
 7. - [ ] ssh setup
 8. - [ ] disko setup
-9. - [ ] nixvim
+9. - [X] nixvim
   
    
