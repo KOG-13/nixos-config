@@ -11,7 +11,7 @@
 		};
 
 		nixvim = {
-			url = "github:nix-community/nixvim";
+			url = "github:Kogara13/nixvim-config";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
@@ -36,7 +36,6 @@
 			modules = [
 			    ./common/systems/configuration.nix
 			    ./systems/desktop/default.nix
-			    inputs.nixvim.nixosModules.nixvim
 			];
 		    };
 

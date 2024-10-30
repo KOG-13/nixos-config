@@ -10,6 +10,6 @@
 		./steam.nix
 		./tmux.nix
 		./xserver.nix
-		./nixvim/nixvim.nix
+		#./nixvim/nixvim.nix
 	];
 }

@@ -80,6 +80,8 @@
 			nixadd = "git -C ~/nix add --all";
 			nixstatus = "git -C ~/nix status";
 			dev = "nix develop --command zsh";
+			flake = "[ -f ./flake.nix ] && nvim ./flake.nix || echo 'flake.nix not found in the current directory'";
+
 
 			pipes = "pipes.sh";
 		};

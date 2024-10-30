@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
 	nixpkgs.config = {
 		allowUnfree = true;
 		permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
@@ -6,6 +6,7 @@
 
 	environment.systemPackages = with pkgs; 
 	let 
+	    system = "x86_64-linux";
 	    ### RStudio with packages ###
 	    RStudio-with-my-packages = rstudioWrapper.override{
 		packages = with rPackages; [ 
@@ -93,7 +94,8 @@
 		mpv # music daemon
 		mysql-workbench # MySQL editor
 	    #N
-		neovim # best editor
+		#neovim # best editor
+		inputs.nixvim.packages.${system}.default
 		newsflash # RSS feed reader for GNOME
 		nix-index # A files database for nixpkgs
 	    #O
@@ -129,7 +131,6 @@
 		unzip # Zip file extracter
 		usbutils # additional tools for cli
 	    #V
-		vim # better editor
 		virt-manager
 		    qemu  
 		    libvirt
