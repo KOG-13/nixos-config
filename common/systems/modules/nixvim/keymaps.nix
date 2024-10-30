@@ -38,6 +38,12 @@
 				"<leader>gf" = "git_files";
 				"<leader>tg" = ":Telescope live_grep<CR>";
 
+				# Tmux-navigation
+				"<C-h>" = "<cmd> TmuxNavigationLeft<CR>";
+				"<C-l>" = "<cmd> TmuxNavigationRight<CR>";
+				"<C-j>" = "<cmd> TmuxNavigationDown<CR>";
+				"<C-k>" = "<cmd> TmuxNavigationUP<CR>";
+
 				};
 			visual = 
 				lib.mapAttrsToList

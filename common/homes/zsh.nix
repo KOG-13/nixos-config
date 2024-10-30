@@ -40,7 +40,12 @@
 			eval "$(zoxide init zsh)"
 
 			# Echos a random pokemon when opening a new shell
-			pokemon-colorscripts --random
+			#pokemon-colorscripts --random
+
+			# Fixes highlight issues in tmux nvim (works with another line in tmux.conf)
+			export TERM=xterm-256color
+			# Fixes delayed escape issue in tmux nvim (see additional config line in tmux.conf)
+			set ttimeoutlen=100
 		'';
 
 		shellAliases = 

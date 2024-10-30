@@ -9,6 +9,7 @@
 		#./rustaceanvim.nix
 		./telescope.nix
 		./transparent.nix
+		./vim-tmux-navigator.nix
 		./lsp.nix
 		./luasnip.nix
 		./webdevicons.nix
