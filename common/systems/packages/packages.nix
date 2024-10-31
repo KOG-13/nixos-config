@@ -144,6 +144,7 @@
 	    #W
 		wget # File retrieval for HTTP/S, FTP
 	    #X
+    xclip
 		xorg.xev # display key presses and codes
 	    #Y
 		yt-dlp # CLI for downloading youtube videos

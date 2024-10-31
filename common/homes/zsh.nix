@@ -70,7 +70,7 @@
 
 			vim = "nvim";
 			v = "nvim";
-			vf = "vim $(fzf)";
+      vf = "vim $(fzf)";
 
 			fetch = "fastfetch";
 
@@ -81,6 +81,8 @@
 			nixstatus = "git -C ~/nix status";
 			dev = "nix develop --command zsh";
 			flake = "[ -f ./flake.nix ] && nvim ./flake.nix || echo 'flake.nix not found in the current directory'";
+
+      push = "cat ~/Documents/key.txt | xclip -selection clipboard && git push";
 
 
 			pipes = "pipes.sh";
