@@ -8,7 +8,7 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 1. - [X] [zsh](https://github.com/Kogara13/nixos-config/blob/da80d281ffc67a0841aab6b052765cc6d39cf6eb/common/homes/zsh.nix)
 2. - [X] [dev flake templates](https://github.com/Kogara13/templates)
 3. - [X] [nixvim](https://github.com/Kogara13/nixvim-config)
-4. - [X] tmux
+4. - [X] tmux (Standard tmux.conf configuration. Looking for a way to add to flake)
 5. - [ ] firefox config (At this point, I'm probably just gonna switch to vivaldi)
 6. - [ ] hyprland
 7. - [ ] default config for new devices (without GRUB-dependent ThinkPad, might just make [#deskop](https://github.com/Kogara13/nixos-config/blob/970424fcda80fa6128d60b8ba4a1359767ba2e6d/flake.nix#L26C2-L40C9) default profile)
