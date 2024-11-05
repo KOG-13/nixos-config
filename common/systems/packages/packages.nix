@@ -72,6 +72,8 @@
 		handbrake # tool for encoding video files 
 		home-manager
     hunspell
+    hunspellDicts.en_US
+    hunspellDicts.en_US-large
 	    #I 
 	    #J
 		jetbrains.idea-community # Java/Kotlin IDE
