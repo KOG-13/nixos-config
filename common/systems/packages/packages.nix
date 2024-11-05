@@ -32,7 +32,7 @@
 		### Main Packages ###
 
 	    #A
-		android-studio # Android development IDE
+    android-studio # Android development IDE
 		    android-studio-tools # additional tools for Android Studio
 		aseprite # pixel art creation tool
 		atlauncher # minecraft launcher
@@ -71,6 +71,7 @@
 	    #H
 		handbrake # tool for encoding video files 
 		home-manager
+    hunspell
 	    #I 
 	    #J
 		jetbrains.idea-community # Java/Kotlin IDE
@@ -211,6 +212,7 @@
 		powerline-fonts
 		powerline-symbols
 		corefonts
+    vistafonts
 		(nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
 	];
         
