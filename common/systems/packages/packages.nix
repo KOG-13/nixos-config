@@ -145,6 +145,8 @@
 		    }))
 		vlc # video player
 	    #W
+    whatsapp-for-linux
+    whatsapp-emoji-font
 		wget # File retrieval for HTTP/S, FTP
 	    #X
     xclip
