@@ -31,109 +31,110 @@
 	[
 		### Main Packages ###
 
-	    #A
-    android-studio # Android development IDE
+	  #A
+    android-studio # android development IDE
 		    android-studio-tools # additional tools for Android Studio
 		aseprite # pixel art creation tool
 		atlauncher # minecraft launcher
 		audacity # audio editor/mixer
-	    #B
+	  #B
 		blender # 3D modeling software
 		blockbench # voxel modeling software
 		bluez # bluetooth manager
-		    bluez-tools # Additional tools to manage bluetooth devices
+		    bluez-tools # additional tools to manage bluetooth devices
 		btop # TUI system monitor
-	    #C
+	  #C
 		calibre # ebub e-reader
-		cava # Audio visualizer
-		cbonsai # For people who kill real plants
+		cava # audio visualizer
+		cbonsai # for people who kill real plants
 		cmatrix # RAM Eater 3000
-		cool-retro-term
+		cool-retro-term # pretend you're older than you really are
 		cowsay # Don't have a cow, man!
-	    #D
+	  #D
 		desmume # DSI emulator
 		discord # just in case		    
 		    vesktop # better discord for linux
-	    #E 
-	    #F
-		fastfetch
+	  #E 
+	  #F
+		fastfetch # neofetch replacement
 		figlet # Big words!
-		firefox
-		fortune-kind # Kind words of wisdom
+		firefox # no longer just for old people
+		fortune-kind # kind words of wisdom
 		freetube # youtube client 	
 		fzf # fuzzy finder
-	    #G
-		gimp # FOSS Photoshop
-		git # Version control manager
+	  #G
+		gimp # FOSS Photoshop alternative
+		git # version control manager
 		gnome-multi-writer # GUI USB flasher
 		godot_4 # game development platform
 		gparted # GUI partition manager
-	    #H
+	  #H
 		handbrake # tool for encoding video files 
-		home-manager
-    hunspell
-    hunspellDicts.en_US
-    hunspellDicts.en_US-large
-	    #I 
-	    #J
+		home-manager # keep your house clean
+    hunspell # active spell check in LibreOffice
+        hunspellDicts.en_US
+        hunspellDicts.en_US-large
+	  #I 
+	  #J
 		jetbrains.idea-community # Java/Kotlin IDE
-	    #K
+	  #K
 		kanata # keyboard remapper (for using esc in vim)
 		keepassxc # locally hosted password manager
-		kitty # Terminal emulator
+		kitty # terminal emulator
 		krita # drawing program
-	    #L
+	  #L
 		lazygit # TUI for git commands
 		libaacs # library to access AACS protected Blu-Ray disks
 		libbluray # library to access Blu-Ray disks for playback
 		libreoffice-qt6-still # LibreOffice program suite
 		lolcat # TASTE THE RAINBOW MOTHA FUCKA
-		lsd
-	    #M
+		lsd # ls with more colors
+	  #M
 		makemkv # BluRay and DVD ripper
 		mgba # game boy advance emulator
 		mullvad-vpn # VPN client
 		mpv # music daemon
 		mysql-workbench # MySQL editor
-	    #N
+	  #N
 		#neovim # best editor
-		inputs.nixvim.packages.${system}.default
+		inputs.nixvim.packages.${system}.default # custom neovim config via nixvim
 		newsflash # RSS feed reader for GNOME
 		nix-index # A files database for nixpkgs
-	    #O
+	  #O
 		obsidian # Markdown editor
 		openssl # Library for SSL and TLD protocols
-	    #P
+	  #P
 		pcmanfm # file manager
-		pfetch # Neofetch Jr.
+		pfetch # neofetch jr.
 		pika-backup # home directory backup manager
 		pipes # A series of tubes
 		pokemmo-installer # PokeMMO game installer/launcher
-		pokemon-colorscripts-mac
+		pokemon-colorscripts-mac # echo some pokemon 
 		pokemonsay # Pokemon!
 		protonmail-desktop # desktop client for proton mail
 		puddletag # music file metadata editor
-	    #Q 
-	    #R
+	  #Q 
+    qbittorrent # torrenting software
+	  #R
 		ranger # TUI file manager
 		resources # task manager-esque 
-    ripgrep
-	    #S
-		screenkey # key press display for hyprland
+    ripgrep # CLI regex
+	  #S
 		snes9x # SNES emulator
 		spotify # music streaming service
-		steam # gaming
+		steam # gamer
 		    linuxKernel.packages.linux_zen.xpadneo # package for steam controller compatibility
-		starship # Makes zsh look nice
+		starship # makes zsh look nice
 		syncthing # file synchronization tool
 		synology-drive-client # file synchronizion for Synology NAS 
-	    #T
+	  #T
 		thunderbird # email client
-		tmux
-	    #U
+		tmux # all of the shells
+    tutanota-desktop
+	  #U
 		unzip # Zip file extracter
 		usbutils # additional tools for cli
-	    #V
+	  #V
 		virt-manager
 		    qemu  
 		    libvirt
@@ -144,20 +145,20 @@
 			nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [pkgs.kdePackages.wrapQtAppsHook];
 		    }))
 		vlc # video player
-	    #W
-    whatsapp-for-linux
-    whatsapp-emoji-font
+	  #W
+    whatsapp-for-linux # why can't everyone just use signal
+    whatsapp-emoji-font # please
 		wget # File retrieval for HTTP/S, FTP
-	    #X
-    xclip
+	  #X
+    xclip # copy cli commands to clipboard
 		xorg.xev # display key presses and codes
-	    #Y
+	  #Y
 		yt-dlp # CLI for downloading youtube videos
-	    #Z
-		zip # File compressor/archiver
+	  #Z
+		zip # file compressor/archiver
 		zoom-us # zoom chat
 		zoxide # powerful cd
-		zsh # Terminal shell
+		zsh # terminal shell
 		    zplug # zsh plugins
     
 
@@ -167,17 +168,18 @@
 		# Example of creating custom package from .nix files
 
 		### Hyprland Packages ###
-		hyprland
+		hyprland # gee I wonder
+		cliphist # retains clipboard history in hyprland
 		dolphin # File Manager
 		dunst # notification daemon for hyprland 
 		libnotify # dependency for dunst
 		rofi-wayland # program search
+		screenkey # key press display for hyprland
 		swww # wallpaper manager
 		waybar # taskbar for hyprland
-		xdg-desktop-portal-hyprland
 		wev # wayland xev
-		wl-clipboard
-		cliphist
+		wl-clipboard # clipboard for hyprland
+		xdg-desktop-portal-hyprland
 		
 	
 		### Coding Packages ###
@@ -216,7 +218,7 @@
 		powerline-fonts
 		powerline-symbols
 		corefonts
-    vistafonts
+    vistafonts # Microsoft fonts ()
 		(nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
 	];
         
