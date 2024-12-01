@@ -1,7 +1,8 @@
+{ pkgs, ...}:
 {
   imports =
     [ 
-      ./packages/packages.nix
+      ./packages/bundle.nix
       ./modules/bundle.nix
     ];
 
@@ -55,6 +56,15 @@
 
   # Automatically detecting blu-ray drive
   boot.kernelModules = ["sg"];
+
+  # set linux kernel version
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  systemd.tmpfiles.rules = [
+    # Ensure kieran owns any new directories under /run/media/kieran
+    "d /run/media/kieran 0755 kieran kieran -"
+    "Z /run/media/kieran/* 0755 kieran kieran -"
+  ];
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
