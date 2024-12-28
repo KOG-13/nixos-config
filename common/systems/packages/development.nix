@@ -36,7 +36,7 @@
 		    android-studio-tools # additional tools for Android Studio
 		git # version control manager
 		godot_4 # game development platform
-		jetbrains.idea-community # Java/Kotlin IDE
+		#jetbrains.idea-community # Java/Kotlin IDE
 		mysql-workbench # MySQL editor
 		inputs.nixvim.packages.${system}.default # custom neovim config via nixvim
     RStudio-with-my-packages # Rstudio with the packages above
