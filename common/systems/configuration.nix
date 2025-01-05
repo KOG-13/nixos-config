@@ -1,4 +1,4 @@
-{ pkgs, ...}:
+{ pkgs, inputs, ...}:
 {
   imports =
     [ 
@@ -65,6 +65,9 @@
     "d /run/media/kieran 0755 kieran kieran -"
     "Z /run/media/kieran/* 0755 kieran kieran -"
   ];
+
+  #PolyMC Requirement
+  nixpkgs.overlays = [ inputs.polymc.overlay ];
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;

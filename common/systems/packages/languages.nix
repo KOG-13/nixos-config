@@ -11,6 +11,7 @@
 		mysql84 #MySQL Language 
 		cmake # C/C++ Compiler
 		kotlin # Java-like language
+    /*
 		(python311.withPackages (ps: with ps; [ # Python 3.11 with declared packages
 		    numpy
 		    scipy
@@ -22,5 +23,8 @@
 		    matplotlib
 		    opencv4
 		]))
+    */
     ];
+    
+
 }

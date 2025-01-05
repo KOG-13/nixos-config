@@ -9,6 +9,7 @@
 		./sound.nix
 		./steam.nix
 		./tmux.nix
+    ./vm.nix
 		./xserver.nix
 		#./nixvim/nixvim.nix
 	];

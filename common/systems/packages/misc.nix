@@ -14,5 +14,6 @@
 		pokemmo-installer # PokeMMO game installer/launcher
 		pokemon-colorscripts-mac # echo some pokemon 
 		pokemonsay # Pokemon!
+    polymc
     ];
 }

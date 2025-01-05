@@ -39,5 +39,12 @@
 		stateVersion = "24.05";
 	};	
 
+  dconf.settings = {
+    "org/virt-manager/virt-manager/connections" = {
+        autocorrect = ["qemu:///system"];
+        uris = ["qemu:///system"];
+    };
+  };
+
 }
 

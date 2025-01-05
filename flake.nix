@@ -10,10 +10,18 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
+    
 		nixvim = {
 			url = "github:Kogara13/nixvim-config";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+   
+    
+    polymc = {
+        url = "github:PolyMC/PolyMC";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
+
 	};
 
 	outputs = { self, nixpkgs, nixpkgs-stable,  home-manager, ... }@inputs: 
