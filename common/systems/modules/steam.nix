@@ -8,10 +8,6 @@
 
   services.xserver.videoDrivers = ["amdgpu"];  
 
-  environment.systemPackages = with pkgs; [
-      mangohud
-    ];
-
 	programs.steam = {
 		enable = true;
     gamescopeSession.enable = true;

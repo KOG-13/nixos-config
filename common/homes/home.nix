@@ -36,7 +36,7 @@
 	home = {
 		username = "kieran";
 		homeDirectory = "/home/kieran";
-		stateVersion = "24.05";
+		stateVersion = "24.11";
 	};	
 
   dconf.settings = {

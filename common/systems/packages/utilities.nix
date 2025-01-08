@@ -2,6 +2,7 @@
     environment.systemPackages = with pkgs;
     [
     # Utilites
+    bottles
 		btop # TUI system monitor
 		fastfetch # neofetch replacement
 		gnome-multi-writer # GUI USB flasher

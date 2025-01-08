@@ -11,9 +11,7 @@
 		#cava # audio visualizer
 		lolcat # TASTE THE RAINBOW MOTHA FUCKA
 		pipes # A series of tubes
-		pokemmo-installer # PokeMMO game installer/launcher
 		pokemon-colorscripts-mac # echo some pokemon 
 		pokemonsay # Pokemon!
-    polymc
     ];
 }
