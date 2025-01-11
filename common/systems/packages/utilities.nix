@@ -7,6 +7,7 @@
 		fastfetch # neofetch replacement
 		gnome-multi-writer # GUI USB flasher
 		gparted # GUI partition manager
+    libsForQt5.kalk # Calculator for KDE
 		keepassxc # locally hosted password manager
 		kitty # terminal emulator
 		lazygit # TUI for git commands

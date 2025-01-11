@@ -66,6 +66,9 @@
             bradlc.vscode-tailwindcss
             dracula-theme.theme-dracula
             vscode-icons-team.vscode-icons
+            #inferrinizzard.prettier-sql-vscode
+            #mtxr.sqltools
+            #alexcvzz.vscode-sqlite
         ]
         
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
@@ -86,6 +89,36 @@
                 publisher = "rangav";
                 version = "2.33.2";
                 sha256 = "43e8c8e1d27846b660ff803b08a99a28c1851a3e953a2fbdb826d6e5d7e509f8";
+            }
+            /*{
+                name = "mssql";
+                publisher = "ms-mssql";
+                version = "1.27.0";
+                sha256 = "c1bd46ccc39f2673212e3b8c4b40fc2ee121e75f8d0e0fe9abdeef047823a14b";
+            }*/
+            {
+                name = "prettier-sql-vscode";
+                publisher = "inferrinizzard";
+                version = "1.6.0";
+                sha256 = "97aa5fffebaff019f8b83317d026f34a3c9d4d2b6bef7b91639e7401df709bb4";
+            }
+            {
+                name = "sqltools";
+                publisher = "mtxr";
+                version = "0.28.3";
+                sha256 = "6d3ac70218fcbb0cd12089b388ab0e8b365ff3e937b7e56b90e799ac5c7b487f";
+            }
+            {
+                name = "vscode-sqlite";
+                publisher = "alexcvzz";
+                version = "0.14.1";
+                sha256 = "8ce42446006453026ea43f9c468fca45a84546cf365f72b8f43c92c3a1a553c5";
+            }
+            {
+                name = "sqltools-driver-mysql";
+                publisher = "mtxr";
+                version = "0.6.3";
+                sha256 = "08ef9d726bda491397d6bbb176b2df4213c5dc780406d7ac13424fca2cc3ee2a";
             }
         ];
         
