@@ -61,6 +61,7 @@
 			l = "lsd -lh"; # replaces "l = 'lsd -alh'
 			ls = "lsd";
 			ll = "lsd -l";
+      lh = "ls -ld .??*"; # Show only hidden files
 			cdl = "cd && clear";
 			cl = "clear";
 
