@@ -11,14 +11,25 @@
 		config = ''
 		(defsrc
 		    caps
+        kp1 kp2 kp3 kp4 kp5
 		)
 
 		(defalias
 		    escctrl (tap-hold 100 100 esc lctrl)
+        f1key (tap-hold 100 100 f1 f1)
+        f2key (tap-hold 100 100 f2 f2)
+        f3key (tap-hold 100 100 f3 f3)
+        f4key (tap-hold 100 100 f4 f4)
+        f5key (tap-hold 100 100 f5 f5)
 		)
 
 		(deflayer base
 		    @escctrl
+        @f1key
+        @f2key
+        @f3key
+        @f4key
+        @f5key
 		)
 		'';
 	    };

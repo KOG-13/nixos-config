@@ -7,7 +7,15 @@
       ./modules/bundle.nix
     ];
 
-  networking.hostName = "system76"; # Define your hostname.
+  networking = {
+    hostName = "system76";
+    interfaces.eth0.ipv4.addresses = [ { 
+        address = "192.168.1.76";
+        prefixLength =24;
+    }];
+    defaultGateway = "192.168.1.1";
+    nameservers = [ "8.8.8.8" ];
+  };
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

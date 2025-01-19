@@ -69,6 +69,19 @@
   #PolyMC Requirement
   nixpkgs.overlays = [ inputs.polymc.overlay ];
 
+  #SSH Configuration
+  services.openssh = {
+    enable = true;
+    ports = [ 22 443 ];
+    settings = {
+        PasswordAuthentication = true;
+        AllowUsers = null;
+        UseDns = true;
+        X11Forwarding = false;
+        PermitRootLogin = "no";  
+    };
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
