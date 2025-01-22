@@ -75,10 +75,9 @@
     ports = [ 22 443 ];
     settings = {
         PasswordAuthentication = true;
-        AllowUsers = null;
+        AllowUsers = [ "kieran" ];
         UseDns = true;
-        X11Forwarding = false;
-        PermitRootLogin = "no";  
+        PermitRootLogin = "yes";  
     };
   };
 
