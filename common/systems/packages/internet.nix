@@ -9,7 +9,8 @@
 		protonmail-desktop # desktop client for proton mail
     qbittorrent # torrenting software
 		syncthing # file synchronization tool
-		synology-drive-client # file synchronizion for Synology NAS 
+		#synology-drive-client # file synchronizion for Synology NAS 
+    nextcloud-client
 		thunderbird # email client
     tutanota-desktop
 		(vivaldi.overrideAttrs # web browser (additional config for KDE 6 compatibility

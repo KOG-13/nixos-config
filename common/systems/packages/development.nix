@@ -39,7 +39,7 @@
 		#jetbrains.idea-community # Java/Kotlin IDE
 		mysql-workbench # MySQL editor
 		inputs.nixvim.packages.${system}.default # custom neovim config via nixvim
-    RStudio-with-my-packages # Rstudio with the packages above
+    #RStudio-with-my-packages # Rstudio with the packages above
 		virt-manager
 		    qemu  
 		    libvirt
