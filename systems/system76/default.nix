@@ -4,8 +4,7 @@
       ../../common/systems/configuration.nix
       ./hardware-configuration.nix
       #./packages/packages.nix
-      ./modules/bundle.nix
-    ];
+      ./modules/bundle.nix ];
 
   networking = {
     hostName = "system76";
