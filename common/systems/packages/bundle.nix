@@ -13,5 +13,6 @@
     ./office.nix
     ./system.nix
     ./utilities.nix
+    ./vscode.nix
 	];
 }

@@ -23,6 +23,7 @@
     xclip # copy cli commands to clipboard
 		xorg.xev # display key presses and codes
 		zip # file compressor/archiver
+    zotero
 		zoxide # powerful cd
 		zsh # terminal shell
 		    zplug # zsh plugins
