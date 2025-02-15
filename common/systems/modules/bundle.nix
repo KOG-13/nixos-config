@@ -5,7 +5,7 @@
 		./kanata.nix
 		./hyprland.nix
 		./mysql.nix
-		./networkManager.nix
+    ./network.nix
 		./sound.nix
 		./steam.nix
 		./tmux.nix

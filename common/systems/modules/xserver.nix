@@ -26,6 +26,7 @@
 services = {
     xserver = {
         enable = true; # Keep this enabled for all desktop managers
+        videoDrivers = [ "amdgpu" ];
         #displayManager.gdm.enable = true;
         #desktopManager.gnome.enable = true;
     };

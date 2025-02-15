@@ -2,14 +2,15 @@
 	description = "My system configuration";
 	
 	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+		#nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 		nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+    old-obsidian.url = "github:nixos/nixpkgs/34a626458d686f1b58139620a8b2793e9e123bba";
 
 		home-manager = {
-			url = "github:nix-community/home-manager";
+			url = "github:nix-community/home-manager/release-24.11";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-
     
 		nixvim = {
 			url = "github:Kogara13/nixvim-config";
@@ -28,24 +29,24 @@
 
 		let 
 			system = "x86_64-linux";
-		in {	
-
-		
+      pkgs = nixpkgs.legacyPackages.${system};
+		in 
+    {		
 		nixosConfigurations = {
 		    "desktop" = nixpkgs.lib.nixosSystem {
-			specialArgs = {
-			    hostname = "desktop";
-			    pkgs-stable = import nixpkgs {
-				inherit system;
-				config.allowUnfree = true;
-			    };
-			    inherit inputs system;
-			};
-			modules = [
+			      specialArgs = {
+			          hostname = "desktop";
+			          pkgs-stable = import nixpkgs {
+				            inherit system;
+				            config.allowUnfree = true;
+			          };
+			          inherit inputs system;
+			      };
+			  modules = [
 			    ./common/systems/configuration.nix
 			    ./systems/desktop/default.nix
-			];
-		    };
+			  ];
+        };
 
 		    "system76" = nixpkgs.lib.nixosSystem {
 			specialArgs = {

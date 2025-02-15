@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:{
     environment.systemPackages = with pkgs;
     [
-
+        nerd-font-patcher
     ];
 		### Fonts ###
     fonts.packages = with pkgs; [
@@ -14,7 +14,7 @@
         powerline-symbols
         corefonts
         vistafonts # Microsoft fonts ()
-        nerd-fonts.symbols-only
+        nerdfonts
         #(nerd-fonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     ];
 }

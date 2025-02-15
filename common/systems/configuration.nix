@@ -6,13 +6,10 @@
       ./modules/bundle.nix
     ];
 
-  #networking.hostName = "nixDesktop"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  # Set experimental features
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
+  nixpkgs.config.allowUnfree = true;  # Enable unfree packages
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -33,32 +30,41 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes"];
-
-  # Automatically delete config versions older than 30 days
+  # Automatically delete config versions older than 7 days
   nix.gc = {
 	automatic = true;
 	dates = "daily";
 	options = "--delete-older-than 7d";
   };
 
-  #xdg.portal.enable = true;
-  #xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-kde pkgs.xdg-desktop-portal-wlr ];
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  #Add ~/.local/bin to PATH
-  environment.localBinInPath = true;
+  environment = {
+      #Add ~/.local/bin to PATH
+      localBinInPath = true;
 
-  #Get completion for system packages (e.g. systemd). Added for additional fzf config
-  environment.pathsToLink = [ "/share/zsh" ];
+      #Get completion for system packages (e.g. systemd). Added for additional fzf config
+      pathsToLink = [ "/share/zsh" ];
 
-  # Automatically detecting blu-ray drive
-  boot.kernelModules = ["sg"];
+      # For electron based applications
+      sessionVariables.NIXOS_OZONE_WL = "1";
+  };
 
-  # set linux kernel version
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  boot = {
+    # Automatically detecting blu-ray drive
+    kernelModules = ["sg"];
+    # set linux kernel version
+    kernelPackages = pkgs.linuxPackages_latest;
+
+    initrd.kernelModules = [ "amdgpu" ];
+  };
+
+
 
   systemd.tmpfiles.rules = [
     # Ensure kieran owns any new directories under /run/media/kieran
@@ -93,9 +99,6 @@
   # };
 
   # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

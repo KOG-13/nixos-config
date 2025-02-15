@@ -84,8 +84,8 @@
 			flake = "[ -f ./flake.nix ] && nvim ./flake.nix || echo 'flake.nix not found in the current directory'";
 
       push = "cat ~/Documents/key.txt | xclip -selection clipboard && git push";
-
-
+        
+      #obsidian  = "obsidian --disable-gpu";
 			pipes = "pipes.sh";
 		};
 

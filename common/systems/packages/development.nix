@@ -2,7 +2,6 @@
 
     nixpkgs.config = {
         allowUnfree = true;
-        permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
     };
 
     environment.systemPackages = with pkgs;
@@ -36,7 +35,7 @@
     devenv
 		git # version control manager
 		godot_4 # game development platform
-		mysql-workbench # MySQL editor
+		#mysql-workbench # MySQL editor
 		inputs.nixvim.packages.${system}.default # custom neovim config via nixvim
     #RStudio-with-my-packages # When the hell are they gonna fix this  
 		virt-manager
