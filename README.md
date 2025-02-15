@@ -10,7 +10,7 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 3. - [X] [nixvim](https://github.com/Kogara13/nixvim-config)
 4. - [X] tmux
 5. - [X] default config for new devices (Created profiles for desktop and laptop)
-6. - [ ] hyprland
+6. - [ ] hyprland (Next on the list)
 7. - [ ] ssh setup
 8. - [ ] disko setup
 
