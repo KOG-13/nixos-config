@@ -14,6 +14,7 @@
 		lsd # ls with more colors
 		pcmanfm # file manager
 		pfetch # neofetch jr.
+    picard
 		pika-backup # home directory backup manager
 		ranger # TUI file manager
 		resources # task manager-esque 
