@@ -22,13 +22,6 @@ truncation_length = 3
 truncation_symbol = "…/"
 read_only = " 󰌾"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-"Dev" = " "
-"SynologyDrive" = " "
 
 [docker_context]
 symbol = " "

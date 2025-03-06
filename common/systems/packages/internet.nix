@@ -4,7 +4,7 @@
     # Internet
 		discord # just in case		    
 		    vesktop # better discord for linux
-		firefox # no longer just for old people
+		librewolf # no longer just for old people
 		mullvad-vpn # VPN client
 		protonmail-desktop # desktop client for proton mail
     qbittorrent # torrenting software
