@@ -5,7 +5,8 @@
 		./starship/starship.nix
 		./kitty.nix
     ./tmux.nix
-		./wms/default.nix
+		./wms/hyprland.nix
+    ./wms/waybar.nix
 	];
 
 
