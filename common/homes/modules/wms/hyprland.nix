@@ -47,12 +47,14 @@
         decoration = {
             rounding = 8;
 
+            /*
             blur = {
                 enabled = true;
                 size = 16;
                 passes = 2;
                 new_optimizations = true;
             };
+            */
 
             #drop_shadow = true;
             #shadow_range = 4;
@@ -138,7 +140,6 @@
             "$mainMod, D, exec, rofi -show run"
             "$mainMod, P, pseudo, # dwindle"
             "$mainMod, J, togglesplit, # dwindle"
-            "$mainMod, B, exec, vivaldi"
 
             # Move focus with mainMod + arrow keys
             "$mainMod, left,  movefocus, l"

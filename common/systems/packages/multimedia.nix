@@ -7,6 +7,7 @@
 		freetube # youtube client 	
 		handbrake # tool for encoding video files 
 		krita # drawing program
+    leocad
 		makemkv # BluRay and DVD ripper
 		mpv # music daemon
 		newsflash # RSS feed reader for GNOME

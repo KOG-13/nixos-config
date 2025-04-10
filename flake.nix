@@ -39,6 +39,7 @@
 			          pkgs-stable = import nixpkgs {
 				            inherit system;
 				            config.allowUnfree = true;
+                    config.cudaSupport = true;
 			          };
 			          inherit inputs system;
 			      };

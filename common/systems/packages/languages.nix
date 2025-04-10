@@ -5,7 +5,7 @@
     ## These are not meant for development. Use devenv 
 		gcc # GNU compiler
 		nodejs # Javascript framework
-		#python3# Python programming language
+		python3# Python programming language
     python312Packages.materialx
 		rustc # Rust 
 		cargo # Rust package manager

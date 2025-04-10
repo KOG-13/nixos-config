@@ -5,5 +5,6 @@
     # Office
 		libreoffice-qt6-still # LibreOffice program suite
 		obsidian # Markdown editor
+    todoist-electron
     ];
 }

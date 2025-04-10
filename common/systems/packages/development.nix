@@ -2,6 +2,7 @@
 
     nixpkgs.config = {
         allowUnfree = true;
+        permittedInsecurePackages = [ "electron-25.9.0"];
     };
 
     environment.systemPackages = with pkgs;
@@ -24,7 +25,7 @@
             Hmisc
             corrgram
             gains
-            ROCR
+            ROC
             caret
         ]; 
           };
@@ -37,6 +38,7 @@
 		godot_4 # game development platform
 		#mysql-workbench # MySQL editor
 		inputs.nixvim.packages.${system}.default # custom neovim config via nixvim
+    #jupyter
     #RStudio-with-my-packages # When the hell are they gonna fix this  
 		virt-manager
 		    qemu  
