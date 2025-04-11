@@ -5,7 +5,6 @@
 		    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
 		    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 		    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
-        #old-obsidian.url = "github:nixos/nixpkgs/34a626458d686f1b58139620a8b2793e9e123bba";
 
 		    home-manager = {
 			      url = "github:nix-community/home-manager/release-24.11";
