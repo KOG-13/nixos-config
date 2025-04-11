@@ -1,7 +1,7 @@
 {pkgs, ...}:
 {
     services.mysql = {
-	enable = true;
-	package = pkgs.mariadb;
+	      enable = true;
+	      package = pkgs.mariadb;
     };
 }

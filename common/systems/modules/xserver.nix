@@ -1,42 +1,18 @@
-/*
 {
-	services = {
-	    xserver = {
-		# Enable the X11 windowing system
-		enable = true;
-
-		#displayManager.lightdm.enable = true;
-		# Enable the XFCE Desktop Environment
-		#desktopManager.xfce.enable = true;	
-
-		displayManager.gdm.enable = true;
-		desktopManager.gnome.enable = true;
-
-		# Configure keymap in X11	
-		xkb = {
-		    layout = "us";
-		    variant = "";
-		};
-	    };
-	};
-}
-*/
-
-{
-services = {
-    xserver = {
-        enable = true; # Keep this enabled for all desktop managers
-        videoDrivers = [ "amdgpu" ];
-        #displayManager.gdm.enable = true;
-        #desktopManager.gnome.enable = true;
+    services = {
+        xserver = {
+            enable = true; # Keep this enabled for all desktop managers
+            videoDrivers = [ "amdgpu" ];
+            #displayManager.gdm.enable = true;
+            #desktopManager.gnome.enable = true;
+        };
+        displayManager.sddm.enable = true;
+        displayManager.sddm.wayland.enable = true;
+        desktopManager.plasma6 = {
+            enable = true;
+            enableQt5Integration = true;
+        };
     };
-    displayManager.sddm.enable = true;
-    displayManager.sddm.wayland.enable = true;
-    desktopManager.plasma6 = {
-        enable = true;
-        enableQt5Integration = true;
-    };
-};
 }
 
 

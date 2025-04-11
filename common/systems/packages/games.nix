@@ -1,11 +1,6 @@
 { pkgs, inputs, ... }:{
     environment.systemPackages = with pkgs;
     [
-        # Games
-        #desmume # DSI emulator
-        #atlauncher # minecraft launcher
-        #mgba # game boy advance emulator
-        #snes9x # SNES emulator
         polymc
         pokemmo-installer # PokeMMO game installer/launcher
         #retroarch-full # Emulator

@@ -54,12 +54,6 @@
                 version = "2.33.2";
                 sha256 = "43e8c8e1d27846b660ff803b08a99a28c1851a3e953a2fbdb826d6e5d7e509f8";
             }
-            /*{
-                name = "mssql";
-                publisher = "ms-mssql";
-                version = "1.27.0";
-                sha256 = "c1bd46ccc39f2673212e3b8c4b40fc2ee121e75f8d0e0fe9abdeef047823a14b";
-            }*/
             {
                 name = "prettier-sql-vscode";
                 publisher = "inferrinizzard";

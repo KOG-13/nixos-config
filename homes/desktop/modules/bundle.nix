@@ -1,8 +1,6 @@
 {
-	imports = [
-		#./git.nix
-		#./wms/hyprland.nix
-	];
-
-
+    imports = [
+		    #./git.nix
+		    #./wms/hyprland.nix
+	  ];
 }

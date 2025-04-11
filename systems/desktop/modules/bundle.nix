@@ -1,8 +1,7 @@
 {
-	imports = [
-		./bootloader.nix
-		./mullvad.nix
-		./user.nix
-		#./syncthing.nix
-	];
+    imports = [
+        ./bootloader.nix
+        ./mullvad.nix
+        ./user.nix
+	  ];
 }
