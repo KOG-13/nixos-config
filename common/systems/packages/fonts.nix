@@ -15,6 +15,7 @@
         corefonts
         vistafonts # Microsoft fonts ()
         nerdfonts
+        noto-fonts-cjk-sans
         #(nerd-fonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     ];
 }

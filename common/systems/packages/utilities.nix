@@ -14,6 +14,7 @@
         pfetch # neofetch jr.
         picard # music metadata editer
         pika-backup # home directory backup manager
+        poppler_utils # utility package for altering pdfs
         ranger # TUI file manager
         resources # task manager-esque 
         tmux # all of the shells

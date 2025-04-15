@@ -3,6 +3,7 @@
     [
         asunder # CD ripper
         audacity # audio editor/mixer
+        beets
         calibre # ebub e-reader
         freetube # youtube client 	
         handbrake # tool for encoding video files 
@@ -11,6 +12,7 @@
         mpv # music daemon
         newsflash # RSS feed reader for GNOME
         puddletag # music file metadata editor
+        rhythmbox # Export music to Ipod
         spotify # music streaming service
         strawberry-qt6 # Music file/CD player
         vlc # video player
