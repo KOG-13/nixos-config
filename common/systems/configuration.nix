@@ -31,7 +31,22 @@
         LC_TIME = "en_US.UTF-8";
     };
 
-  # Automatically delete config versions older than 7 days
+    # enable wireless networkManager service
+    networking.networkmanager.enable = true;
+
+    #SSH Configuration
+    services.openssh = {
+        enable = true;
+        ports = [ 22 443 ];
+        settings = {
+            PasswordAuthentication = true;
+            AllowUsers = [ "kieran" ];
+            UseDns = true;
+            PermitRootLogin = "yes";  
+        };
+    };
+
+    # Automatically delete config versions older than 7 days
     nix.gc = {
 	      automatic = true;
 	      dates = "daily";
@@ -75,17 +90,6 @@
     #PolyMC Requirement
     nixpkgs.overlays = [ inputs.polymc.overlay ];
 
-    #SSH Configuration
-    services.openssh = {
-        enable = true;
-        ports = [ 22 443 ];
-        settings = {
-            PasswordAuthentication = true;
-            AllowUsers = [ "kieran" ];
-            UseDns = true;
-            PermitRootLogin = "yes";  
-        };
-    };
 
     # Enable touchpad support (enabled default in most desktopManager).
     # services.xserver.libinput.enable = true;

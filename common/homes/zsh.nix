@@ -88,6 +88,7 @@
             
             obsidian  = "obsidian --disable-gpu";
             pipes = "pipes.sh";
+
         };
 
 
