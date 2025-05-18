@@ -6,15 +6,14 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 
 ## Configuration Goals
 1. - [X] [zsh](https://github.com/Kogara13/nixos-config/blob/da80d281ffc67a0841aab6b052765cc6d39cf6eb/common/homes/zsh.nix)
-2. - [ ] dev flake templates (Scraping this and instead will work with devenv)
+2. - [ ] hyprland
 3. - [X] [nixvim](https://github.com/Kogara13/nixvim-config)
 4. - [X] tmux
 5. - [X] default config for new devices (Created profiles for desktop and laptop)
-6. - [ ] niri (Next on the list)
+6. - [ ] dev flake templates (Scraping this and instead will work with devenv)
 7. - [ ] ssh setup
 8. - [ ] disko setup
-9. - [ ] librewolf (I'll try again with mozilla browser confiuration)
-
+9. - [X] librewolf (bookmarks will be replaced with startpage)
 
   
    
