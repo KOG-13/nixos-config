@@ -13,7 +13,7 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 6. - [ ] dev flake templates (Scraping this and instead will work with devenv)
 7. - [ ] ssh setup
 8. - [ ] disko setup
-9. - [X] librewolf (bookmarks will be replaced with startpage)
+9. - [X] librewolf (bookmarks will be replaced with startpage. I AIN'T DECLARING ALL THOSE IN NIX)
 
   
    
