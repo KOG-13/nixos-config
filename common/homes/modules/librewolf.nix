@@ -131,8 +131,15 @@
 
         # information on different profiles
         profiles = {
-            # profile specific preferences
-            settings = {
+            kieran = {
+                id = 0;
+                name = "kieran";
+                search = {    
+                    force = true;
+                    default = "DuckDuckGo";
+                    privateDefault = "DuckDuckGo";
+                    order = ["DuckDuckGo" "Google"];
+                };
             };
         };
     };
