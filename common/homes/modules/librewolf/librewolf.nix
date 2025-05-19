@@ -1,3 +1,4 @@
+{ config, pkgs, lib, ...}:
 # Additional settings: 
 #   https://nix-community.github.io/home-manager/options.html#opt-programs.firefox.profiles
 #   https://mozilla.github.io/policy-templates/
@@ -11,6 +12,8 @@
         # Extention List. Credit to:
         # https://github.com/mattogodoy/nixos-config/blob/master/home-manager/modules/browsers/librewolf.nix for
         policies = {
+            #ManagedBookmarks = lib.importJSON ./bookmarks.json;
+            NoDefaultBookmarks = false;
             ExtensionSettings = with builtins;
             let extension = shortID: uuid: {
                 name = uuid;
@@ -28,7 +31,7 @@
                 (extension "reddit-enhancement-suite" "jid1-xUfzOsOFlzSOXg@jetpack")
                 (extension "keepassxc-browser" "keepassxc-browser@keepassxc.org")
                 (extension "unhook" "myallychou@gmail.com")
-                (extension "zotero-connector" "zotero@chnm.gmu.edu")
+                (extension "zotero" "zotero@chnm.gmu.edu")
             ];
 
             Preferences = {
@@ -76,18 +79,22 @@
                 #Search
                 "browser.policies.runOncePerModification.setDefaultSearchEngine" = "DuckDuckGo";
 
-                # Disable search suggestions
-                "browser.search.suggest.enabled" = false;
-                "browser.urlbar.suggest.searches" = false;
+                "browser.toolbars.bookmarks.visibility" = "never";
 
-                "browser.urlbar.suggest.addons" = false;
-                "browser.urlbar.suggest.bookmark" = true;
-                "browser.urlbar.suggest.clipboard" = false;
+                # Disable search suggestions
+                
+                "browser.search.suggest.enabled" = true;
+                "browser.urlbar.suggest.searches" = false;
+                
+                
+                "browser.urlbar.suggest.addons" = false; 
+                "browser.urlbar.suggest.bookmark" = false;
+                "browser.urlbar.suggest.clipboard" = false; 
                 "browser.urlbar.suggest.engines" = false;
-                "browser.urlbar.suggest.fakespot" = false;
+                "browser.urlbar.suggest.fakespot" = false; 
                 "browser.urlbar.suggest.history" = false;
                 "browser.urlbar.suggest.mdn" = false;
-                "browser.urlbar.suggest.openpage" = false;
+                "browser.urlbar.suggest.openpage" = false; 
                 "browser.urlbar.suggest.pocket" = false;
                 "browser.urlbar.suggest.quickactions" = false;
                 "browser.urlbar.suggest.recentsearches" = false;
@@ -100,6 +107,9 @@
                 "browser.urlbar.shortcuts.bookmarks" = false;
                 "browser.urlbar.shortcuts.history" = false;
                 "browser.urlbar.shortcuts.tabs" = false;
+               
+                #style
+                "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
 
                 # Disable telemetry
                 "datareporting.policy.dataSubmissionEnabled" = false;
@@ -127,6 +137,7 @@
             "sidebar.revamp" = true;
             "sidebar.verticalTabs" = true;
             "sidebar.main.tools" = "bookmarks,history";
+            "devtools.inspector.showUserAgentStyles" = true;
         };
 
         # information on different profiles
@@ -142,5 +153,8 @@
                 };
             };
         };
+    };
+    home.file = {
+        ".librewolf/kieran/chrome/userContent.css".source = ./userContent.css;
     };
 }

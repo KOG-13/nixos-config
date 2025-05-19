@@ -8,6 +8,6 @@
         ./tmux.nix
         ./wms/hyprland.nix
         ./wms/waybar.nix
-        ./librewolf.nix
+        ./librewolf/librewolf.nix
 	  ]; 
 }
