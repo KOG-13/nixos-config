@@ -10,6 +10,8 @@
 			      url = "github:nix-community/home-manager/release-24.11";
 			      inputs.nixpkgs.follows = "nixpkgs";
 		    };
+
+        swww.url = "github:LGFae/swww";
     
 		    nixvim = {
 			      url = "github:Kogara13/nixvim-config";

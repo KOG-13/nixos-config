@@ -5,7 +5,7 @@
         rofi-wayland
         wl-clipboard
         waybar
-        swww
+        inputs.swww.packages.${pkgs.system}.swww
         cliphist # retains clipboard history in hyprland
         dolphin # File Manager
         dunst # notification daemon for hyprland 

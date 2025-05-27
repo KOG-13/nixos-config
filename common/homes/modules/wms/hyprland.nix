@@ -13,10 +13,11 @@
 
     
 	      exec-once = [
-            "swww-init"
-            "swww imp ~/Pictures/Wallpapers/Ultrawide wallpapers/Pixel Art Wallpaper.png"
+            "swww-daemon"
+            "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Pixel Art Wallpaper.png"
+            #"killall waybar"
             "waybar"
-
+            #"waybar & disown" # ¯\_(ツ)_/¯ if it works, it works
 	      ];
 
 
@@ -28,9 +29,10 @@
 
         general = {
             gaps_in = 5;
-            gaps_out = 20;
-            border_size = 3;
-            "col.active_border" = "rgba(33ccffee) rdba(00ff99ee) 45deg";
+            gaps_out = 25;
+            border_size = 2;
+            #"col.active_border" = "rgba(33ccffee) rdba(00ff99ee) 45deg";
+            "col.active_border" = "rgba(f0bb78ee) rdba(543a14ee) 45deg";
             "col.inactive_border" = "rgba(595959aa)";
 
             # Set to true enable resizing windows by clicking and dragging on borders and gaps
@@ -45,7 +47,7 @@
 
         
         decoration = {
-            rounding = 8;
+            rounding = 2;
 
             /*
             blur = {
@@ -133,31 +135,50 @@
         bind = [
 
             "$mainMod, Return, exec, kitty"
+            "$mainMod, T, exec, kitty"
             "$mainMod, Q, killactive,"
             "$mainMod, M, exit,"
             "$mainMod, E, exec, dolphin"
             "$mainMod, F, togglefloating,"
             "$mainMod, D, exec, rofi -show run"
             "$mainMod, P, pseudo, # dwindle"
-            "$mainMod, J, togglesplit, # dwindle"
+            #"$mainMod, J, togglesplit, # dwindle"
+            "$mainMod, W, exec, pkill waybar"
+            "$mainMod SHIFT, W, exec, waybar"
+
 
             # Move focus with mainMod + arrow keys
             "$mainMod, left,  movefocus, l"
             "$mainMod, right, movefocus, r"
             "$mainMod, up,    movefocus, u"
             "$mainMod, down,  movefocus, d"
+            # Vim key alternative
+            "$mainMod, H,  movefocus, l"
+            "$mainMod, L,  movefocus, r"
+            "$mainMod, K,  movefocus, u"
+            "$mainMod, J,  movefocus, d"
 
             # Moving windows
             "$mainMod SHIFT, left,  swapwindow, l"
             "$mainMod SHIFT, right, swapwindow, r"
             "$mainMod SHIFT, up,    swapwindow, u"
             "$mainMod SHIFT, down,  swapwindow, d"
+            # Vim key alternative
+            "$mainMod SHIFT, H,  swapwindow, l"
+            "$mainMod SHIFT, L, swapwindow, r"
+            "$mainMod SHIFT, K,    swapwindow, u"
+            "$mainMod SHIFT, J,  swapwindow, d"
 
             # Window resizing                     X  Y
             "$mainMod CTRL, left,  resizeactive, -60 0"
             "$mainMod CTRL, right, resizeactive,  60 0"
             "$mainMod CTRL, up,    resizeactive,  0 -60"
             "$mainMod CTRL, down,  resizeactive,  0  60"
+            # Vim key alterantive
+            "$mainMod CTRL, H,  resizeactive, -60 0"
+            "$mainMod CTRL, L, resizeactive,  60 0"
+            "$mainMod CTRL, K,    resizeactive,  0 -60"
+            "$mainMod CTRL, J,  resizeactive,  0  60"
 
             # Switch workspaces with mainMod + [0-9]
             "$mainMod, 1, workspace, 1"
@@ -186,7 +207,7 @@
             # Scroll through existing workspaces with mainMod + scroll
             "$mainMod, mouse_down, workspace, e+1"
             "$mainMod, mouse_up, workspace, e-1"
-
+            
             # Keyboard backlight
             "$mainMod, F3, exec, brightnessctl -d *::kbd_backlight set +33%"
             "$mainMod, F2, exec, brightnessctl -d *::kbd_backlight set 33%-"

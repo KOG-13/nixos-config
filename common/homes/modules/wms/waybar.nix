@@ -1,16 +1,19 @@
+{ config, pkgs, lib, inputs, ...}:
+
 {
     programs.waybar = {
-            enable = true;
-            systemd = {
-                #enable = false;
-                #target = "graphical-session.target";
-            };
+        enable = true;
+        settings = {
+           mainBar = {
+                "layer" = "top";
+                "position" = "top";
+                "height" = 30;
+                "spacing" = 4;
 
-            settings = [{
-                layer = "top";
-                position = "top";
-                height = 30;
-                spacing = 4;
+                modules-left = [
+                    "hyprland/workspaces"
+                ];
+                
                 modules-center = [
                     "clock"
                 ];
@@ -19,18 +22,25 @@
                     "memory"
                     "cpu"
                     "network"
-                    "tray"
                 ];
-            }];
-    
-            style = ''
-                *{
-                    font-family: "JetBrainsMono Nerd Font";
-                    font-size: 12pt;
-                    font-weight: bold;
-                    border-radius: 8px;
-                }
-            '';
+
+                "hyprland/workspaces" = {
+                    #"disable-scroll" = true;
+                    "all-outputs" = false;
+                    "active-only" = false;
+                    "on-click" = "activate";
+                    "on-scroll-up" = "hyprctl dispatch workspace -1";
+                    "on-scroll-down" = "hyprctl dispatch workspace +1";
+                    persistent-workspaces = {
+                        "*" = [1 2 3 4];
+                    };
+                    
+                };
+           }; 
+
+        };   
+
+        style = builtins.readFile ./style.css;
     };
 
 }

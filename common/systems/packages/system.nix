@@ -13,8 +13,10 @@
         libbluray # library to access Blu-Ray disks for playback
         nix-index # A files database for nixpkgs
         openssl # Library for SSL and TLD protocols  
+        psmisc # for killall command
         qt6.qtwayland
         ripgrep # CLI regex
+        sdbus-cpp # Something to make waybar work (I think)
         starship # makes zsh look nice
         usbutils # additional tools for cli
     ];
