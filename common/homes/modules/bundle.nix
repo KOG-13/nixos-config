@@ -7,8 +7,8 @@
         ./lsd/lsd.nix
         #./swww.nix
         ./tmux.nix
-        ./wms/hyprland.nix
-        ./wms/waybar.nix
+        ./hyprland/hyprland.nix
+        ./waybar/waybar.nix
         ./librewolf/librewolf.nix
 	  ]; 
 }

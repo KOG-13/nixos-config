@@ -17,6 +17,7 @@
         poppler_utils # utility package for altering pdfs
         ranger # TUI file manager
         resources # task manager-esque 
+        rockbox-utility
         tmux # all of the shells
         unzip # Zip file extracter
         wget # File retrieval for HTTP/S, FTP

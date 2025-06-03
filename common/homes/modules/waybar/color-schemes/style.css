@@ -6,3 +6,7 @@
     border: none;
     font-weight: bold;
 }
+
+#workspaces button:hover {
+    background-color: #74512D;
+}

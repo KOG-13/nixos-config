@@ -2,6 +2,7 @@
     environment.systemPackages = with pkgs;
     [
         asunder # CD ripper
+        aseprite
         audacity # audio editor/mixer
         beets
         calibre # ebub e-reader
@@ -11,6 +12,7 @@
         makemkv # BluRay and DVD ripper
         mpv # music daemon
         newsflash # RSS feed reader for GNOME
+        pavucontrol
         puddletag # music file metadata editor
         rhythmbox # Export music to Ipod
         spotify # music streaming service

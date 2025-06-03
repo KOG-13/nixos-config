@@ -11,6 +11,7 @@
         syncthing # file synchronization tool
         #synology-drive-client # file synchronizion for Synology NAS 
         nextcloud-client
+        telegram-desktop
         thunderbird # email client
         tutanota-desktop
         (vivaldi.overrideAttrs # web browser (additional config for KDE 6 compatibility
