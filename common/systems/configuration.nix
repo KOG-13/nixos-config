@@ -36,9 +36,8 @@
         wireless = {
             enable = true;
             userControlled.enable = true;
+            networks."Fios-ZbCW2".pskRaw = "b0d9e65f31646a5c8cc041e427508ef9fc38a4c57b02ee3222cc869c2448856a";
         };     
-        #networkmanager.enable = true; 
-
     };
 
     #SSH Configuration
@@ -82,8 +81,8 @@
         # Automatically detecting blu-ray drive
         kernelModules = ["sg"];
         # set linux kernel version
-        kernelPackages = pkgs.linuxPackages_latest; 
-        /*kernelPackages = pkgs.linuxPackagesFor (pkgs.linux_6_14.override {
+        #kernelPackages = pkgs.linuxPackages_latest; 
+        kernelPackages = pkgs.linuxPackagesFor (pkgs.linux_6_14.override {
             argsOverride = rec {
                 src = pkgs.fetchurl {
                     url = "mirror://kernel/linux/kernel/v6.x/linux-${version}.tar.xz";
@@ -92,7 +91,7 @@
                 version = "6.14.6";
                 modDirVersion = "6.14.6";
             };
-        });*/
+        });
         initrd.kernelModules = [ "amdgpu" ];
     };
 
@@ -109,7 +108,7 @@
 
 
     # Enable touchpad support (enabled default in most desktopManager).
-    # services.xserver.libinput.enable = true;
+     #services.xserver.libinput.enable = true;
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.

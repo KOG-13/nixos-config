@@ -8,7 +8,6 @@
         ./sound.nix
         ./steam.nix
         ./vm.nix
-        ./wifi.nix
         ./xserver.nix
 	];
 }
