@@ -56,7 +56,7 @@
                 "browser.urlbar.suggest.quicksuggest.sponsored" = false;
 
                 #Password fill settings
-                "signon.rememberSignons" = false; # Disable saving passwords
+                "signon.rememberSignons" = true; # Disable saving passwords
                 "signon.autofillForms" = false; # Disable autofill login and passwords
                 "signon.formlessCapture.enabled" = false; # Disable formless login capture for Password Manager
 

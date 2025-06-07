@@ -16,7 +16,7 @@
             "swww-daemon"
             "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Pixel Art Wallpaper.png"
             #"killall waybar"
-            "waybar"
+            "waybar-toggle.sh"
             #"waybar & disown" # ¯\_(ツ)_/¯ if it works, it works
 	      ];
 
@@ -29,7 +29,7 @@
 
         general = {
             gaps_in = 5;
-            gaps_out = 25;
+            gaps_out = 18;
             border_size = 2;
             #"col.active_border" = "rgba(33ccffee) rdba(00ff99ee) 45deg";
             "col.active_border" = "rgba(f0bb78ee) rdba(543a14ee) 45deg";

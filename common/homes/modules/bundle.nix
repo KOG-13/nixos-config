@@ -9,6 +9,7 @@
         ./tmux.nix
         ./hyprland/hyprland.nix
         ./waybar/waybar.nix
+        ./waybar/waybar-toggle.nix
         ./librewolf/librewolf.nix
 	  ]; 
 }

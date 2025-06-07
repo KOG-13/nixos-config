@@ -30,9 +30,6 @@
             bradlc.vscode-tailwindcss
             dracula-theme.theme-dracula
             vscode-icons-team.vscode-icons
-            #inferrinizzard.prettier-sql-vscode
-            #mtxr.sqltools
-            #alexcvzz.vscode-sqlite
         ]
         
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
@@ -65,6 +62,12 @@
                 publisher = "mtxr";
                 version = "0.28.3";
                 sha256 = "6d3ac70218fcbb0cd12089b388ab0e8b365ff3e937b7e56b90e799ac5c7b487f";
+            }
+            {
+                name = "svelte-vscode";
+                publisher = "svelte";
+                version = "109.8.1";
+                sha256 = "20b67b600ecb9e0c2953753eaac8073ddfa8c72a8b3464622940850bf38c040a";
             }
             {
                 name = "vscode-sqlite";
