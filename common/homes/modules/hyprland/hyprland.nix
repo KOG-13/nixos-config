@@ -126,9 +126,12 @@
 
             sensitivity = 0; # -1.0 - 1.0, 0 means no modification
 
-            #touchpad = {
-            #	natural_scoll = false;
-            #};
+            touchpad = {
+            	natural_scoll = true;
+              tap_to_click = true;
+              disable_while_typing = true;
+
+            };
         };	
 
         "$mainMod" = "SUPER";

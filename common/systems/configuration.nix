@@ -32,7 +32,14 @@
     };
 
     # enable wireless networkManager service
-    networking.networkmanager.enable = true;
+    networking = {
+        wireless = {
+            enable = true;
+            userControlled.enable = true;
+        };     
+        #networkmanager.enable = true; 
+
+    };
 
     #SSH Configuration
     services.openssh = {
@@ -54,7 +61,7 @@
     };
 
     xdg.portal.enable = true;
-    xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-kde pkgs.xdg-desktop-portal-wlr ];
+    xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.kdePackages.xdg-desktop-portal-kde pkgs.xdg-desktop-portal-wlr ];
 
     # Enable CUPS to print documents.
     services.printing.enable = true;
@@ -75,8 +82,8 @@
         # Automatically detecting blu-ray drive
         kernelModules = ["sg"];
         # set linux kernel version
-        #kernelPackages = pkgs.linuxPackages_latest; 
-        kernelPackages = pkgs.linuxPackagesFor (pkgs.linux_6_14.override {
+        kernelPackages = pkgs.linuxPackages_latest; 
+        /*kernelPackages = pkgs.linuxPackagesFor (pkgs.linux_6_14.override {
             argsOverride = rec {
                 src = pkgs.fetchurl {
                     url = "mirror://kernel/linux/kernel/v6.x/linux-${version}.tar.xz";
@@ -85,7 +92,7 @@
                 version = "6.14.6";
                 modDirVersion = "6.14.6";
             };
-        });
+        });*/
         initrd.kernelModules = [ "amdgpu" ];
     };
 
@@ -126,6 +133,6 @@
     # this value at the release version of the first install of this system.
     # Before changing this value read the documentation for this option
     # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-    system.stateVersion = "24.11"; # Did you read the comment?
+    system.stateVersion = "25.05"; # Did you read the comment?
 
 }

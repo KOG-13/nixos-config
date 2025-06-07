@@ -14,8 +14,7 @@
         powerline-symbols
         corefonts
         vistafonts # Microsoft fonts ()
-        nerdfonts
         noto-fonts-cjk-sans
         #(nerd-fonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
-    ];
+    ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues nerd-fonts); 
 }
