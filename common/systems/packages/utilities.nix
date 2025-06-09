@@ -10,6 +10,7 @@
         kitty # terminal emulator
         lazygit # TUI for git commands
         lsd # ls with more colors
+        pamixer
         pcmanfm # file manager
         pfetch # neofetch jr.
         picard # music metadata editer

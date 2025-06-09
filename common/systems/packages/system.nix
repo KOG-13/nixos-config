@@ -3,6 +3,7 @@
     [
         bluez # bluetooth manager
             bluez-tools # additional tools to manage bluetooth devices
+        ddcutil
         fzf # fuzzy finder
         home-manager # keep your house clean
         hunspell # active spell check in LibreOffice
@@ -19,5 +20,6 @@
         sdbus-cpp # Something to make waybar work (I think)
         starship # makes zsh look nice
         usbutils # additional tools for cli
+        wireplumber
     ];
 }

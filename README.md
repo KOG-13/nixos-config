@@ -6,7 +6,7 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 
 ## Configuration Goals
 1. - [X] [zsh](https://github.com/Kogara13/nixos-config/blob/da80d281ffc67a0841aab6b052765cc6d39cf6eb/common/homes/zsh.nix)
-2. - [ ] hyprland
+2. - [ ] hyprland (in progress)
 3. - [X] [nixvim](https://github.com/Kogara13/nixvim-config)
 4. - [X] tmux
 5. - [X] default config for new devices (Created profiles for desktop and laptop)

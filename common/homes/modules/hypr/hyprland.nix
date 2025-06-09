@@ -1,3 +1,4 @@
+{lib, ...}:
 {
     wayland.windowManager.hyprland = {
 	  enable = true;
@@ -17,6 +18,7 @@
             "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Pixel Art Wallpaper.png"
             #"killall waybar"
             "waybar-toggle.sh"
+            "hypridle"
             #"waybar & disown" # ¯\_(ツ)_/¯ if it works, it works
 	      ];
 
@@ -32,7 +34,8 @@
             gaps_out = 18;
             border_size = 2;
             #"col.active_border" = "rgba(33ccffee) rdba(00ff99ee) 45deg";
-            "col.active_border" = "rgba(f0bb78ee) rdba(543a14ee) 45deg";
+            #"col.active_border" = "rgba(f0bb78ee) rdba(543a14ee) 45deg";
+            "col.active_border" = "rgba(f0bb78ee)";
             "col.inactive_border" = "rgba(595959aa)";
 
             # Set to true enable resizing windows by clicking and dragging on borders and gaps
@@ -127,8 +130,8 @@
             sensitivity = 0; # -1.0 - 1.0, 0 means no modification
 
             touchpad = {
-            	natural_scoll = true;
-              tap_to_click = true;
+            	natural_scroll = true;
+              tap-to-click = true;
               disable_while_typing = true;
 
             };
@@ -225,6 +228,10 @@
             ", XF86MonBrightnessDown, exec, brightnessctl set 5%- "
             ", XF86MonBrightnessUp, exec, brightnessctl set +5% "
 
+            # Screen lock
+            "$mainMod, B, exec, wpctl set-mute 60 toggle && hyprlock"
+
+
             # Configuration files
             ''$mainMod SHIFT, N, exec, alacritty -e sh -c "rb"''
             ''$mainMod SHIFT, C, exec, alacritty -e sh -c "conf"''
@@ -233,7 +240,7 @@
             '', Print, exec, grim -g "$(slurp)" - | swappy -f -''
 
             # Waybar
-            "$mainMod, B, exec, pkill -SIGUSR1 waybar"
+            #"$mainMod, B, exec, pkill -SIGUSR1 waybar"
             "$mainMod, W, exec, pkill -SIGUSR2 waybar"
 
             # Disable all effects

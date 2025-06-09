@@ -95,7 +95,7 @@
         initrd.kernelModules = [ "amdgpu" ];
     };
 
-
+    hardware.i2c.enable = true;
 
     systemd.tmpfiles.rules = [
         # Ensure kieran owns any new directories under /run/media/kieran

@@ -2,6 +2,9 @@
     environment.systemPackages = with pkgs;
     [
         hyprland # gee I wonder
+        hypridle # idle agent
+        hyprlock # screen lock
+        brightnessctl
         rofi-wayland
         wl-clipboard
         waybar
