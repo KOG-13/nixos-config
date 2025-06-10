@@ -24,9 +24,12 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
+        spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+        spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
+
     };
 
-	  outputs = { self, nixpkgs, nixpkgs-stable,  home-manager, ... }@inputs: 
+	  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
 
 		let 
 			system = "x86_64-linux";
@@ -71,11 +74,17 @@
 		        "kieran@desktop" = home-manager.lib.homeManagerConfiguration {
 			          extraSpecialArgs = {
 			              username = "kieran";
+                    inherit inputs;
 			          };
-			          pkgs = nixpkgs.legacyPackages.${system};
+			          #pkgs = nixpkgs.legacyPackages.${system};
+			          pkgs = import nixpkgs {
+                    system = "x86_64-linux";
+                    config.allowUnfree = true;
+                };
 			          modules = [ 
 			              ./common/homes/home.nix
 			              ./homes/desktop/home.nix
+                    inputs.spicetify-nix.homeManagerModules.default
 			          ];
 		        };
 
@@ -83,11 +92,17 @@
 		        "kieran@system76" = home-manager.lib.homeManagerConfiguration {
 			          extraSpecialArgs = {
 			              username = "kieran";
+                    inherit inputs;
 			          };
-			          pkgs = nixpkgs.legacyPackages.${system};
+			          #pkgs = nixpkgs.legacyPackages.${system};
+			          pkgs = import nixpkgs {
+                    system = "x86_64-linux";
+                    config.allowUnfree = true;
+                };
 			          modules = [ 
 			              ./common/homes/home.nix
 			              ./homes/system76/home.nix
+                    inputs.spicetify-nix.homeManagerModules.default
 			          ];
 		        };
         };

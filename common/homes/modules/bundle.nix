@@ -9,6 +9,7 @@
         ./tmux.nix
         ./hypr/hyprland.nix
         ./hypr/hypridle/hypridle.nix
+        ./spicetify.nix
         ./waybar/waybar.nix
         ./waybar/waybar-toggle.nix
         ./librewolf/librewolf.nix
