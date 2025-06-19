@@ -6,17 +6,29 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 
 ## Configuration Goals
 1. - [X] [zsh](https://github.com/Kogara13/nixos-config/blob/da80d281ffc67a0841aab6b052765cc6d39cf6eb/common/homes/zsh.nix)
+   - [ ] Script to switch between starship configs
+   - [ ] Consider fish
 2. - [ ] hyprland (in progress)
+       - [ ] waybar
+       - [ ] Utilities
+          - [X] Brightness Control
+          - [X] Volume Control
+          - [X] Hibernation
+          - [ ] Screenshot
+          - [ ] Wifi
+       - [ ] rofi 
 3. - [X] [nixvim](https://github.com/Kogara13/nixvim-config)
+       - [ ] Config cleanup
 4. - [X] tmux
 5. - [X] default config for new devices (Created profiles for desktop and laptop)
-6. - [ ] dev flake templates (Scraping this and instead will work with devenv)
+6. - [ ] devenv
 7. - [ ] ssh setup
-8. - [ ] disko setup
-9. - [X] librewolf (For what I'm using them for, importing the bookmark.html is easy enough to leave it semi-imperative)
+9. - [ ] librewolf (For what I'm using them for, importing the bookmark.html is easy enough to leave it semi-imperative)
+        - [X] Bookmarks (Easy enough to just save .html file and import on fresh install)
         - [ ] startpage
         - [ ] stylesheets
-        - [ ] fix unhook and zotero extensions
+        - [X] fix unhook and zotero extensions
+        - [X] Set as default browser
 
   
    

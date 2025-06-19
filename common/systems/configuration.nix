@@ -36,7 +36,8 @@
         wireless = {
             enable = true;
             userControlled.enable = true;
-            networks."Fios-ZbCW2".pskRaw = "b0d9e65f31646a5c8cc041e427508ef9fc38a4c57b02ee3222cc869c2448856a";
+            #networks."Fios-ZbCW2".pskRaw = "b0d9e65f31646a5c8cc041e427508ef9fc38a4c57b02ee3222cc869c2448856a";
+            networks."MyOptimum b81a90".pskRaw = "2627e375b80a97e078bfe814de0e36bbcebaff5e4af5236ddd6620733c08d762";
         };     
     };
 
