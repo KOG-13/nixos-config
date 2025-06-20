@@ -3,6 +3,7 @@
     [
         bluez # bluetooth manager
             bluez-tools # additional tools to manage bluetooth devices
+        catppuccin-kde
         ddcutil
         fzf # fuzzy finder
         home-manager # keep your house clean

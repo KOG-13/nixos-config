@@ -3,6 +3,7 @@
         ./git.nix
         ./fzf.nix
         ./starship/starship.nix
+        ./starship/toggle/starship-toggle.nix
         ./kitty.nix
         ./lsd/lsd.nix
         #./swww.nix
