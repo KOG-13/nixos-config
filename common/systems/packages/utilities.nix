@@ -3,6 +3,7 @@
     [
         btop # TUI system monitor
         fastfetch # neofetch replacement
+        fish #YOU KNOW WHAT THAT MEANS
         gnome-multi-writer # GUI USB flasher
         gparted # GUI partition manager
         libsForQt5.kalk # Calculator for KDE
