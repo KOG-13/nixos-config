@@ -17,6 +17,7 @@
         rhythmbox # Export music to Ipod
         spotify # music streaming service
         strawberry-qt6 # Music file/CD player
+        tt-rss
         vlc # video player
         yt-dlp # CLI for downloading youtube videos
     ];

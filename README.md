@@ -6,8 +6,8 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 
 ## Configuration Goals
 1. - [X] [zsh](https://github.com/Kogara13/nixos-config/blob/da80d281ffc67a0841aab6b052765cc6d39cf6eb/common/homes/zsh.nix)
-   - [X] Script to switch between starship configs
-   - [ ] Consider fish
+       - [X] Script to switch between starship configs
+       - [ ] Consider fish
 2. - [ ] hyprland (in progress)
        - [ ] waybar
        - [ ] Utilities
@@ -29,6 +29,7 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
         - [ ] stylesheets
         - [X] fix unhook and zotero extensions
         - [X] Set as default browser
+10. - [ ] Replace KDE with GNOME?
 
   
    

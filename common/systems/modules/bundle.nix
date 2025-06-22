@@ -7,6 +7,7 @@
         ./mysql.nix
         ./sound.nix
         ./steam.nix
+        ./tt-rss.nix
         ./vm.nix
         ./xserver.nix
 	];
