@@ -147,9 +147,9 @@
                 name = "kieran";
                 search = {    
                     force = true;
-                    default = "DuckDuckGo";
-                    privateDefault = "DuckDuckGo";
-                    order = ["DuckDuckGo" "Google"];
+                    default = "ddg";
+                    privateDefault = "ddg";
+                    order = ["ddg" "google"];
                 };
             };
         };
