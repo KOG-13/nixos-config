@@ -1,5 +1,5 @@
 { config, pkgs, lib, inputs, ...}:
-
+/*
 {
     programs.waybar = {
         enable = true;
@@ -12,6 +12,7 @@
 
                 modules-left = [
                     "hyprland/workspaces"
+                    "hyprland/window"
                 ];
                 
                 modules-center = [
@@ -36,11 +37,26 @@
                     };
                     
                 };
+
+                "hyprland/window" = {
+                    "rewrite" = {
+                        "(.*) - LibreWolf" = "LibreWolf";
+                    };
+                };
            }; 
 
         };   
 
-        style = builtins.readFile ./style.css;
+
+        #style = builtins.readFile ./style.css;
+    };
+
+}
+*/
+
+{
+    home.file = {
+        ".config/waybar/waybar.conf".source = ./waybar.conf;
     };
 
 }
