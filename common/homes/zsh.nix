@@ -24,7 +24,7 @@
 		    };
 
 
-		    initExtra = ''
+		    initContent = ''
 			      # Alternate version of cowsay, but with pokemon
 			      #bash -c 'fortune | pokemonsay'
 

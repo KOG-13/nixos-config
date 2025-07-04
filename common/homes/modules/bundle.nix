@@ -13,7 +13,8 @@
         ./spicetify.nix
         #./vscode.nix
         ./waybar/waybar.nix
-        ./waybar/waybar-toggle.nix
+        ./waybar/scripts/waybar-toggle.nix
+        ./waybar/scripts/waybar-restart.nix
         ./librewolf/librewolf.nix
 	  ]; 
 }

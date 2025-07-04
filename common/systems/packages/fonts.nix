@@ -9,6 +9,7 @@
         noto-fonts
         noto-fonts-emoji
         twemoji-color-font
+        font-awesome_6
         font-awesome
         powerline-fonts
         powerline-symbols

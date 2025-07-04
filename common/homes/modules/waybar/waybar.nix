@@ -55,8 +55,11 @@
 */
 
 {
+    programs.waybar.enable = true;
     home.file = {
-        ".config/waybar/waybar.conf".source = ./waybar.conf;
+        ".config/waybar/config.jsonc".source = ./waybar.jsonc;
+        ".config/waybar/style.css".source = ./style.css;
+
     };
 
 }

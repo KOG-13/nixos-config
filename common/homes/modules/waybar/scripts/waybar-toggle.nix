@@ -17,7 +17,7 @@
               fi
           else
               if ! $waybar_running; then
-                  waybar &
+                  waybar 
                   waybar_running=true
               fi
           fi

@@ -1,0 +1,93 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "reload_style_on_change": true,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "wireplumber",
+        "network",
+        //"bluetooth",
+        "battery",
+        "clock"
+    ],
+
+    "hyprland/workspaces": {
+        "all-outputs": false,
+        "active-only":false,
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispacth workspace -1",
+        "on-scroll-down": "hyprctl dispacth workspace +1",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+
+    "hyprland/window": {
+        "rewrite": {
+            "(.*)LibreWolf": "LibreWolf",
+        }    
+    },
+
+    "clock": {
+        "format": "󰸗 {:%a %b%e %H:%M}"
+    },
+
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "bluetooth": {
+        "format": "{format-connected}",
+        "format-connected": "󰂯"
+    },
+
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "on-click": "pavucontrol",
+        "max-volume": 100,
+        "scroll-step": 1,
+        "format-icons": [" ", " ", " "],
+        "states": []
+    }
+    
+}
