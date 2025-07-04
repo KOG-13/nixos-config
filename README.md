@@ -9,13 +9,14 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
        - [X] Script to switch between starship configs
        - [ ] Consider fish
 2. - [ ] hyprland (in progress)
-       - [ ] waybar
+       - [X] waybar
+          - [ ] Resize for laptop
        - [ ] Utilities
           - [X] Brightness Control
           - [X] Volume Control
           - [X] Hibernation
           - [ ] Screenshot
-          - [ ] Wifi
+          - [X] Wifi
        - [ ] rofi 
 3. - [X] [nixvim](https://github.com/Kogara13/nixvim-config)
        - [ ] Config cleanup
