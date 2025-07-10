@@ -32,6 +32,7 @@
     };
 
     # enable wireless networkManager service
+    /*    
     networking = {
         wireless = {
             enable = true;
@@ -45,9 +46,15 @@
                     pskRaw = "b0d9e65f31646a5c8cc041e427508ef9fc38a4c57b02ee3222cc869c2448856a";
                     priority = 20;
                 };
+                "MyAltice 1312BF" = {
+                    pskRaw = "29e6a793645325de4eb7a6ffd3931f24126fd0bd78628154b917cff1f7c41669";
+                    priority = 30;
+                };
             };
         };     
     };
+    */
+    
 
     #SSH Configuration
     services.openssh = {

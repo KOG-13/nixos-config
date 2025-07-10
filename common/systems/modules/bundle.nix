@@ -10,5 +10,6 @@
         ./tt-rss.nix
         ./vm.nix
         ./xserver.nix
+        ./wifi.nix
 	];
 }

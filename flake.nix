@@ -47,10 +47,10 @@
 			              };
 			              inherit inputs system;
 			          };
-			      modules = [
-			          ./common/systems/configuration.nix
-			          ./systems/desktop/default.nix
-			      ];
+                modules = [
+                    ./common/systems/configuration.nix
+                    ./systems/desktop/default.nix
+                ];
             };
 
 		        "system76" = nixpkgs.lib.nixosSystem {

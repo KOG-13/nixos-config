@@ -57,7 +57,7 @@
 
                 #Password fill settings
                 "signon.rememberSignons" = true; # Disable saving passwords
-                "signon.autofillForms" = false; # Disable autofill login and passwords
+                "signon.autofillForms" = true; # Disable autofill login and passwords
                 "signon.formlessCapture.enabled" = false; # Disable formless login capture for Password Manager
 
                 # General 
