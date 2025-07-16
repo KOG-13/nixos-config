@@ -10,29 +10,33 @@
         win-virtio
         win-spice
         qemu_kvm
+        gnome-boxes
+        dnsmasq
+        phodav
     ];
 
+    virtualisation.libvirtd = {
+        enable = true;
+        qemu = {
+            swtpm.enable = true;
+            ovmf.enable = true;
+            ovmf.packages = [ pkgs.OVMFFull.fd ];
+        };
+    };
+    virtualisation.spiceUSBRedirection.enable = true;
+
+    users.groups.libvertd.members = [ "kieran" ];
+    users.groups.kvm.members = [ "kieran" ];
+   
     # Enable dconf (System Management Tool)
     programs.dconf.enable = true;
 
     programs.virt-manager.enable = true;
 
     # Add user to libvertd group
-    users.groups.libvertd.members = [ "kieran" ];
 
 
     # Manage the virtualization services
-    virtualisation = {
-        libvirtd = {
-            enable = true;
-            qemu = {
-                swtpm.enable = true;
-                ovmf.enable = true;
-                ovmf.packages = [ pkgs.OVMFFull.fd ];
-            };
-        };
-        spiceUSBRedirection.enable = true;
-    };
     services.spice-vdagentd.enable = true;
 
 }

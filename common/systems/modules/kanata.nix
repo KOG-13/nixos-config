@@ -11,7 +11,7 @@
 		config = ''
 		(defsrc
 		    caps
-        kp1 kp2 kp3 kp4 kp5
+        kp1 kp2 kp3 kp4 kp5 kp0
 		)
 
 		(defalias
@@ -21,6 +21,7 @@
         f3key (tap-hold 100 100 f3 f3)
         f4key (tap-hold 100 100 f4 f4)
         f5key (tap-hold 100 100 f5 f5)
+        f10key (tap-hold 100 100 f10 f10)
 		)
 
 		(deflayer base
@@ -30,6 +31,7 @@
         @f3key
         @f4key
         @f5key
+        @f10key
 		)
 		'';
 	          };

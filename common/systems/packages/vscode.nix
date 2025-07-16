@@ -5,32 +5,35 @@
         permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
     };
 
-    environment.systemPackages = with pkgs;
-    [
-    (vscode-with-extensions.override {
-        vscodeExtensions = with vscode-extensions; [
-            bbenoist.nix
-            ms-python.python
-            ms-python.vscode-pylance
-            ms-azuretools.vscode-docker
-            ms-vscode-remote.remote-ssh
-            ms-vscode-remote.remote-ssh-edit
-            formulahendry.code-runner # Code Runner
-            ritwickdey.liveserver # Live web server
-            esbenp.prettier-vscode # Code formatter
-            eamodio.gitlens
-            ms-vscode.cpptools-extension-pack
-            visualstudioexptteam.intellicode-api-usage-examples
-            ms-dotnettools.csharp
-            ecmel.vscode-html-css
-            golang.go
-            formulahendry.auto-close-tag
-            yzhang.markdown-all-in-one
-            christian-kohler.npm-intellisense
-            bradlc.vscode-tailwindcss
-            dracula-theme.theme-dracula
-            vscode-icons-team.vscode-icons
-        ]
+    environment.systemPackages = with pkgs; [
+        (vscode-with-extensions.override {
+            vscode = vscodium;
+            vscodeExtensions = with vscode-extensions; [
+                bbenoist.nix
+                ms-python.python
+                ms-python.vscode-pylance
+                ms-azuretools.vscode-docker
+                ms-vscode-remote.remote-ssh
+                ms-vscode-remote.remote-ssh-edit
+                formulahendry.code-runner # Code Runner
+                ritwickdey.liveserver # Live web server
+                esbenp.prettier-vscode # Code formatter
+                eamodio.gitlens
+                ms-vscode.cpptools-extension-pack
+                visualstudioexptteam.intellicode-api-usage-examples
+                ms-dotnettools.csharp
+                ecmel.vscode-html-css
+                golang.go
+                formulahendry.auto-close-tag
+                yzhang.markdown-all-in-one
+                christian-kohler.npm-intellisense
+                bradlc.vscode-tailwindcss
+                dracula-theme.theme-dracula
+                vscode-icons-team.vscode-icons
+                asvetliakov.vscode-neovim
+                jdinhlife.gruvbox
+                sainnhe.gruvbox-material
+    ]
         
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
             {

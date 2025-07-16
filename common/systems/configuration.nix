@@ -7,8 +7,10 @@
         ];
 
     # Set experimental features
-    nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
+    nix.settings = {
+        experimental-features = [ "nix-command" "flakes" ];
+        trusted-users = [ "root" "kieran" ];
+    };
     # Enable unfree packates
     nixpkgs.config.allowUnfree = true; 
 
@@ -69,11 +71,14 @@
     };
 
     # Automatically delete config versions older than 7 days
-    nix.gc = {
-	      automatic = true;
-	      dates = "daily";
-	      options = "--delete-older-than 7d";
+    nix = {
+        gc = {
+            automatic = true;
+            dates = "daily";
+            options = "--delete-older-than 7d";
+        }; 
     };
+
 
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.kdePackages.xdg-desktop-portal-kde pkgs.xdg-desktop-portal-wlr ];
