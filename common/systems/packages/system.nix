@@ -20,6 +20,7 @@
         ripgrep # CLI regex
         sdbus-cpp # Something to make waybar work (I think)
         starship # makes zsh look nice
+        tree
         usbutils # additional tools for cli
         wireplumber
     ];

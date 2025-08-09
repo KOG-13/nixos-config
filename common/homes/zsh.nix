@@ -81,7 +81,8 @@
             pkgs = "cd ~/nix/common/systems/packages/";
             nixadd = "git -C ~/nix add --all";
             nixstatus = "git -C ~/nix status";
-            dev = "nix develop --command zsh";
+            dev = "devenv shell";
+            webdev = "devenv shell && codium";
             flake = "[ -f ./flake.nix ] && nvim ./flake.nix || echo 'flake.nix not found in the current directory'";
 
             push = "cat ~/Documents/key.txt | xclip -selection clipboard && git push";
