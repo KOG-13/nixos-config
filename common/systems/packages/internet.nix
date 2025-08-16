@@ -4,6 +4,7 @@
         discord # just in case		    
             vesktop # better discord for linux
         element-desktop # discord-like chat on fediverse
+        hexchat
         librewolf # no longer just for old people
         mullvad-vpn # VPN client
         protonmail-desktop # desktop client for proton mail
