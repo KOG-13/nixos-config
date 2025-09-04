@@ -48,14 +48,14 @@
 			              inherit inputs system;
 			          };
                 modules = [
-                    ./common/systems/configuration.nix
-                    ./systems/desktop/default.nix
+                    ./system/common/configuration.nix
+                    ./system/desktop/default.nix
                 ];
             };
 
-		        "system76" = nixpkgs.lib.nixosSystem {
+		        "laptop" = nixpkgs.lib.nixosSystem {
 			          specialArgs = {
-			              hostname = "system76";
+			              hostname = "laptop";
 			              pkgs-stable = import nixpkgs {
 				                inherit system;
 				                config.allowUnfree = true;
@@ -63,8 +63,8 @@
 			              inherit inputs system;
 			          };
 			          modules = [
-			              ./common/systems/configuration.nix
-			              ./systems/system76/default.nix
+                    ./system/common/configuration.nix
+                    ./system/laptop/default.nix
 			          ];
             };
 		    };
@@ -82,14 +82,14 @@
                     config.allowUnfree = true;
                 };
 			          modules = [ 
-			              ./common/homes/home.nix
-			              ./homes/desktop/home.nix
+                    ./home/common/home.nix
+                    ./home/desktop/home.nix
                     inputs.spicetify-nix.homeManagerModules.default
 			          ];
 		        };
 
 		    
-		        "kieran@system76" = home-manager.lib.homeManagerConfiguration {
+		        "kieran@laptop" = home-manager.lib.homeManagerConfiguration {
 			          extraSpecialArgs = {
 			              username = "kieran";
                     inherit inputs;
@@ -100,8 +100,8 @@
                     config.allowUnfree = true;
                 };
 			          modules = [ 
-			              ./common/homes/home.nix
-			              ./homes/system76/home.nix
+                    ./home/common/home.nix
+                    ./home/laptop/home.nix
                     inputs.spicetify-nix.homeManagerModules.default
 			          ];
 		        };

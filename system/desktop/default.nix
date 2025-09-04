@@ -1,7 +1,8 @@
 {
     imports =
         [ 
-            ../../common/systems/configuration.nix
+            ../common/configuration.nix
+            #../../common/systems/configuration.nix
             ./hardware-configuration.nix
             ./modules/bundle.nix
         ];

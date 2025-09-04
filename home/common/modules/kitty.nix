@@ -7,7 +7,7 @@
 	      settings = {
 	          enable_audio_bell = false;
 	          confirm_os_window_close = 0;
-	          background_opacity = "0.7";
+	          background_opacity = "0.9";
 	          #background_blur = 5;
 	          symbol_map = let  #  ¯\_(ツ)_/¯ It's in the wiki. Looks like it maps these UTF values to nerd symbols
                 mappings = [
