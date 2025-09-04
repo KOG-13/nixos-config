@@ -22,7 +22,7 @@
     ],
 
     "hyprland/workspaces": {
-        "all-outputs": false,
+        "all-outputs": true,
         "active-only":false,
         "on-click": "activate",
         "on-scroll-up": "hyprctl dispacth workspace -1",
