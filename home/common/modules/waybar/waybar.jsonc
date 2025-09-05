@@ -1,26 +1,59 @@
 {
+//==========Sizing Details================
     "layer": "top",
     "position": "top",
     "height": 30,
     "spacing": 4,
     "reload_style_on_change": true,
 
-    "modules-left": [
-        "hyprland/workspaces"
-    ],
+//===========Modules=====================
+    "modules-left": [ "custom/launcher", "custom/screenshot", "group/windows" ],
+    "modules-center": [ "hyprland/workspaces" ],
+    "modules-right": [ "wireplumber", "bluetooth", "backlight", "network", "battery", "clock" ],
 
-    "modules-center": [
-        "hyprland/window"
-    ],
+//==========Custom Groups====================
+    "group/windows": {
+        "orientation":"horizontal",
+        "modules":[
+            "custom/openbracket",
+            "hyprland/window",
+            "custom/closebracket",
+        ]
+    },
 
-    "modules-right": [
-        "wireplumber",
-        "network",
-        //"bluetooth",
-        "battery",
-        "clock"
-    ],
+//===========Custom Modules=====================
+    // Open, Clost, and split brackets for styling
+    "custom/openbracket": {
+        "format": "[",
+        "tooltip": false
+    },
 
+    "custom/closebracket": {
+        "format": "]",
+        "tooltip": false
+    },
+
+    "custom/split": {
+        "format": "|",
+        "tooltip": false
+    },
+    
+    // Nixos Icon and program launcher
+    "custom/launcher": {
+        "format": "󱄅 ",
+        "tooltip": false,
+        "on-click": "rofi -show drun"
+    },
+    
+    // Icon for screenshot button
+    "custom/launcher": {
+        "format": "󰹑 ",
+        "tooltip": false,
+        "on-click": "hyprshot -m region",
+        "on-click-right": "hyprshot -m output"
+    },
+
+//===========Module Config==========================
     "hyprland/workspaces": {
         "all-outputs": true,
         "active-only":false,
@@ -45,33 +78,14 @@
         "format": "󰸗 {:%a %b%e %H:%M}"
     },
 
-
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
-
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-wifi": " ",
+        "format-ethernet": "{ipaddr}/{cidr}  ",
+        "tooltip-format": "{ifname} via {gwaddr}  ",
+        "format-linked": "{ifname} (No IP)  ",
+        "format-disconnected": "󰌙 ",
+        //"format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
 
@@ -80,10 +94,17 @@
         "format-connected": "󰂯"
     },
 
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
     "wireplumber": {
-        "format": "{icon} {volume}%",
+        "format": "{volume}% {icon}",
         "format-muted": " ",
-        "on-click": "pavucontrol",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
         "max-volume": 100,
         "scroll-step": 1,
         "format-icons": [" ", " ", " "],

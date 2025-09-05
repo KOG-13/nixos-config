@@ -94,6 +94,7 @@
         initrd.kernelModules = [ "amdgpu" ];
     };
 
+    programs.light.enable = true;
 
     hardware.i2c.enable = true;
 

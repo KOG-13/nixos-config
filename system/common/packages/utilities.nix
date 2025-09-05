@@ -6,6 +6,7 @@
         fish #YOU KNOW WHAT THAT MEANS
         gnome-multi-writer # GUI USB flasher
         gparted # GUI partition manager
+        hyprshot # wayland screenshot taker
         libsForQt5.kalk # Calculator for KDE
         keepassxc # locally hosted password manager
         kitty # terminal emulator

@@ -151,7 +151,7 @@
             #"$mainMod, J, togglesplit, # dwindle"
             "$mainMod, W, exec, pkill waybar"
             "$mainMod SHIFT, W, exec, waybar"
-            "$mainMod, X, exec, hyprshot -m region"
+            "$mainMod X, exec, hyprshot -m region"
 
 
             # Move focus with mainMod + arrow keys

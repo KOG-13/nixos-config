@@ -88,6 +88,20 @@ window#waybar.hidden {
   color: #1793d1;
 }
 
+#custom-launcher {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    color: black;
+    background-color: red;
+    font-size: 20px;
+}
+
+#custom-screenshot {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    color: black;
+    background-color: blue;
+    font-size: 20px;
+}
+
 #battery {
   background-color: #f38ba8;
 }

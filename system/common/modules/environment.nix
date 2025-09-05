@@ -29,5 +29,6 @@
 
     environment.variables = { 
 		    EDITOR = "nvim"; 
+        HYPRSHOT_DIR = "$HOME/Pictures/Screenshots";
 	  };
 }
