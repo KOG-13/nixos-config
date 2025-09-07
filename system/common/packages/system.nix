@@ -1,8 +1,8 @@
 { pkgs, inputs, ... }:{
     environment.systemPackages = with pkgs;
     [
-        bluez # bluetooth manager
-            bluez-tools # additional tools to manage bluetooth devices
+        #bluez # bluetooth manager
+            #bluez-tools # additional tools to manage bluetooth devices
         catppuccin-kde
         ddcutil
         fzf # fuzzy finder

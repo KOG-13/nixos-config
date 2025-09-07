@@ -31,7 +31,7 @@
 
         general = {
             gaps_in = 5;
-            gaps_out = 18;
+            gaps_out = 8;
             border_size = 2;
             #"col.active_border" = "rgba(33ccffee) rdba(00ff99ee) 45deg";
             #"col.active_border" = "rgba(f0bb78ee) rdba(543a14ee) 45deg";
@@ -152,6 +152,7 @@
             "$mainMod, W, exec, pkill waybar"
             "$mainMod SHIFT, W, exec, waybar"
             "$mainMod, X, exec, hyprshot -m region"
+            "$mainMod SHIFT, X, exec, hyprshot -m output"
 
 
             # Move focus with mainMod + arrow keys

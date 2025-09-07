@@ -1,0 +1,10 @@
+[global]
+    monitor = 0
+    follow = none
+    enabl_posix_regex = true
+    width = (0, 300)
+    height = (0, 300)
+    origin = bottom-right
+    offset = (50, 10)
+    progress_bar = true
+    

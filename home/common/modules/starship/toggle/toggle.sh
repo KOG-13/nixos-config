@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-LOCALE="$HOME/nix/common/homes/modules/starship/"
+LOCALE="$HOME/nix/home/common/modules/starship/"
 if [ ! -e "$LOCALE" ]; then
     echo "Error: nixos config not found. Aborting"
     exit 1

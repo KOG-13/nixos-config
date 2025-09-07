@@ -1,13 +1,15 @@
 {
     programs.kitty = {
 	      enable = true;
+        # ThemeFile values located at https://github.com/kovidgoyal/kitty-themes/tree/master/themes
 	      #themeFile = "Catppuccin-Mocha";
         #themeFile = "BirdsOfParadise";
-        themeFile = "Espresso_Libre";
+        #themeFile = "Espresso_Libre";
+        themeFile = "GruvboxMaterialDarkMedium";
 	      settings = {
 	          enable_audio_bell = false;
 	          confirm_os_window_close = 0;
-	          background_opacity = "0.9";
+	          background_opacity = "1.0";
 	          #background_blur = 5;
 	          symbol_map = let  #  ¯\_(ツ)_/¯ It's in the wiki. Looks like it maps these UTF values to nerd symbols
                 mappings = [

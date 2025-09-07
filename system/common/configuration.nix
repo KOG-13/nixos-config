@@ -92,6 +92,9 @@
         });
         */
         initrd.kernelModules = [ "amdgpu" ];
+        kernelParams = [
+            "amdgpu.backlight=0"
+        ];
     };
 
     programs.light.enable = true;
