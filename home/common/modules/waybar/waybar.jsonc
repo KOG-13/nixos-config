@@ -9,7 +9,7 @@
 //===========Modules=====================
     "modules-left": [ "custom/launcher", "hyprland/workspaces", "hyprland/window" ],
     "modules-center": [  "clock" ],
-    "modules-right": [ "custom/brightness", "cpu", "memory", "network#speed", "network", "battery", "wireplumber" ],
+    "modules-right": [ "custom/brightness", "cpu", "memory", "network#speed", "network", "battery", "wireplumber", "custom/power" ],
 
 //==========Custom Groups====================
     "group/windows": {
@@ -51,6 +51,12 @@
         "tooltip": false,
         "on-click": "hyprshot -m region",
         "on-click-right": "hyprshot -m output"
+    },
+
+    "custom/power": {
+        "format": "⏻ ",
+        "tooltip": false,
+        "on-click": "wlogout"
     },
 
 //===========Module Config==========================

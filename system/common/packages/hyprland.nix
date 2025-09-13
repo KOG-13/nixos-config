@@ -15,6 +15,7 @@
         libnotify # dependency for dunst
         screenkey # key press display for Hyprland
         wev # wayland xev
+        wlogout #logout/shutdown screen
         xdg-desktop-portal-hyprland
     ];
 }

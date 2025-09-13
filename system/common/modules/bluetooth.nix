@@ -21,12 +21,6 @@
             options bluetooth disable_ertm=Y
         '';
     };	
-    environment.systemPackages = with pkgs; [
-        bluez5-experimental 
-        bluez-tools
-        bluez-alsa
-        bluetuith # can transfer files via OBEX
-      ];
 }
 
 # https://www.reddit.com/r/NixOS/comments/1hdsfz0/what_do_i_have_to_do_to_make_my_xbox_controller/

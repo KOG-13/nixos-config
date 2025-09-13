@@ -33,6 +33,7 @@ window#waybar.hidden {
 #custom-brightness,
 #custom-screenshot,
 #custom-launcher,
+#custom-power,
 #workspaces,
 #window,
 #tray {
@@ -53,6 +54,11 @@ window#waybar.hidden {
     padding-right: 10px;
 }
 
+#custom-power {
+    padding-left: 14px;
+    padding-right: 7px;
+}
+
 #custom-brightness {
     padding-left: 14px;
     color: #d79921;
@@ -70,9 +76,6 @@ window#waybar.hidden {
     color: #d3869b;
 }
 
-#wireplumber {
-    margin-right: 8px;
-}
 
 #battery {
     margin-left: 0;
@@ -82,7 +85,9 @@ window#waybar.hidden {
   color: #a9b665;
 }
 
-
+#custom-power {
+    margin-right: 8px;
+}
 
 /*Custom Launcher*/
 #custom-launcher {

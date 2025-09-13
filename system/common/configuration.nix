@@ -101,6 +101,12 @@
 
     hardware.i2c.enable = true;
 
+    virtualisation.docker.enable = true;
+    virtualisation.docker.rootless = {
+        enable = true;
+        setSocketVariable = true;
+    };
+
     systemd.tmpfiles.rules = [
         # Ensure kieran owns any new directories under /run/media/kieran
         "d /run/media/kieran 0755 kieran kieran -"
