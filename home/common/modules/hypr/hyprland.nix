@@ -10,9 +10,24 @@
     settings = {
 
 	      # See https://wiki.hyprland.org/Configuring/Monitors/
-	      monitor = ",preferred,auto,auto";
+	      #monitor = ",preferred,auto,auto";
+        monitor = [ 
+            "DP-2,preferred,auto,auto"
+            "HDMI-A-1,preferred,auto,auto"
+        ];
 
-    
+        workspace = [
+            "1,monitor:DP-2,default:true"
+            "2,monitor:DP-2,default:true"
+            "3,monitor:DP-2,default:true"
+            "4,monitor:DP-2,default:true"
+            "5,monitor:DP-2,default:true"
+            "6,monitor:DP-2,default:true"
+            "7,monitor:HDMI-A-1,default:true"
+            "8,monitor:HDMI-A-1,default:true"
+            "9,monitor:HDMI-A-1,default:true"
+        ];
+ 
 	      exec-once = [
             "swww-daemon"
             "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Pixel Art Wallpaper.png"

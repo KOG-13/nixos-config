@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }:{
     environment.systemPackages = with pkgs;
     [
+        coppwr #Pipewire gui tool
         # Bluetooth stuff
         bluez5-experimental         
         bluez-tools
