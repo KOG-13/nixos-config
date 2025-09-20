@@ -30,7 +30,6 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
         - [ ] stylesheets
         - [X] fix unhook and zotero extensions
         - [X] Set as default browser
-10. - [ ] Replace KDE with GNOME?
 
   
    
