@@ -5,9 +5,9 @@
 	  users = {
 		    defaultUserShell = pkgs.zsh;
 
-		    users.kieran = {	
+		    users.kog = {	
 			      isNormalUser = true;
-			      description = "Kieran";
+			      description = "KOG";
 			      extraGroups = [ "video" "audio" "networkmanager" "wheel" "input" "uinput" "libvirtd" ];
 			      packages = with pkgs; []; # just in case
 		    };

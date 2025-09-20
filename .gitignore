@@ -1,1 +1,2 @@
-./common/systems/modules/wifi.nix
+./system/common/modules/wifi.nix
+./home/common/modules/git.nix

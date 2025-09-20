@@ -14,7 +14,7 @@
         swww.url = "github:LGFae/swww";
     
 		    nixvim = {
-			      url = "github:Kogara13/nixvim-config";
+			      url = "github:KOG-13/nixvim-config";
 			      inputs.nixpkgs.follows = "nixpkgs";
 		    };
    
@@ -71,9 +71,9 @@
 
 
         homeConfigurations = {
-		        "kieran@desktop" = home-manager.lib.homeManagerConfiguration {
+		        "kog@desktop" = home-manager.lib.homeManagerConfiguration {
 			          extraSpecialArgs = {
-			              username = "kieran";
+			              username = "kog";
                     inherit inputs;
 			          };
 			          #pkgs = nixpkgs.legacyPackages.${system};
@@ -89,9 +89,9 @@
 		        };
 
 		    
-		        "kieran@laptop" = home-manager.lib.homeManagerConfiguration {
+		        "kog@laptop" = home-manager.lib.homeManagerConfiguration {
 			          extraSpecialArgs = {
-			              username = "kieran";
+			              username = "kog";
                     inherit inputs;
 			          };
 			          #pkgs = nixpkgs.legacyPackages.${system};

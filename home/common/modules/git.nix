@@ -1,7 +1,7 @@
 {
     programs.git = {
 		    enable = true;
-		    userName = "Kogara13";
+		    userName = "KOG-13";
 		    userEmail = "kieranogara@gmail.com";
 		    #extraConfig.init.defaultBranch = "main";
         # Use `cache` or `store`, or none

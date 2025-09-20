@@ -13,7 +13,7 @@
           }
         )
         */
-		    steam # gamer
+        steam
         mangohud
 		    linuxKernel.packages.linux_zen.xpadneo # package for steam controller compatibility
     ];

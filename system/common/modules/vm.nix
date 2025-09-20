@@ -25,8 +25,8 @@
     };
     virtualisation.spiceUSBRedirection.enable = true;
 
-    users.groups.libvertd.members = [ "kieran" ];
-    users.groups.kvm.members = [ "kieran" ];
+    users.groups.libvertd.members = [ "kog" ];
+    users.groups.kvm.members = [ "kog" ];
    
     # Enable dconf (System Management Tool)
     programs.dconf.enable = true;

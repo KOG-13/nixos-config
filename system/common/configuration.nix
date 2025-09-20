@@ -9,7 +9,7 @@
     # Set experimental features
     nix.settings = {
         experimental-features = [ "nix-command" "flakes" ];
-        trusted-users = [ "root" "kieran" ];
+        trusted-users = [ "root" "kog" ];
     };
     # Enable unfree packates
     nixpkgs.config.allowUnfree = true; 
@@ -39,7 +39,7 @@
         ports = [ 22 443 ];
         settings = {
             PasswordAuthentication = true;
-            AllowUsers = [ "kieran" ];
+            AllowUsers = [ "kog" ];
             UseDns = true;
             PermitRootLogin = "yes";  
         };
@@ -108,9 +108,9 @@
     };
 
     systemd.tmpfiles.rules = [
-        # Ensure kieran owns any new directories under /run/media/kieran
-        "d /run/media/kieran 0755 kieran kieran -"
-        "Z /run/media/kieran/* 0755 kieran kieran -"
+        # Ensure kog owns any new directories under /run/media/kog
+        "d /run/media/kog 0755 kog kog -"
+        "Z /run/media/kog/* 0755 kog kog -"
     ];
 
     #PolyMC Requirement

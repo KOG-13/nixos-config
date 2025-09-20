@@ -142,9 +142,9 @@
 
         # information on different profiles
         profiles = {
-            kieran = {
+            kog = {
                 id = 0;
-                name = "kieran";
+                name = "kog";
                 search = {    
                     force = true;
                     default = "ddg";
@@ -155,6 +155,6 @@
         };
     };
     home.file = {
-        ".librewolf/kieran/chrome/userContent.css".source = ./userContent.css;
+        ".librewolf/kog/chrome/userContent.css".source = ./userContent.css;
     };
 }

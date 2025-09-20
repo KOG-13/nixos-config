@@ -85,8 +85,13 @@ window#waybar.hidden {
   color: #a9b665;
 }
 
+#wireplumber {
+    color: white;
+}
+
 #custom-power {
     margin-right: 8px;
+    color: white;
 }
 
 /*Custom Launcher*/
