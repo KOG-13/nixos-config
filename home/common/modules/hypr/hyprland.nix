@@ -162,6 +162,7 @@
             "$mainMod, E, exec, dolphin"
             "$mainMod, F, togglefloating,"
             "$mainMod, D, exec, rofi -show run"
+            "$mainMod, SPACE, exec, rofi -show run"
             "$mainMod, P, pseudo, # dwindle"
             #"$mainMod, J, togglesplit, # dwindle"
             "$mainMod, W, exec, pkill waybar"

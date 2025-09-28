@@ -4,6 +4,8 @@
         btop # TUI system monitor
         fastfetch # neofetch replacement
         fish #YOU KNOW WHAT THAT MEANS
+        glibcInfo
+        man-pages
         gnome-multi-writer # GUI USB flasher
         gparted # GUI partition manager
         hyprshot # wayland screenshot taker
@@ -23,6 +25,7 @@
         rockbox-utility
         tmux # all of the shells
         unzip # Zip file extracter
+        valgrind #memory leak detection
         wget # File retrieval for HTTP/S, FTP
         xclip # copy cli commands to clipboard
         xorg.xev # display key presses and codes
