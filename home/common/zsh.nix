@@ -8,7 +8,7 @@
 
 
 		    history.size = 5000;
-		    history.path = "${config.xdg.dataHome}/zsh/history";
+		    #history.path = "${config.xdg.dataHome}/zsh/history";
 		    history.share = true;
 
 		    # zsh plugins

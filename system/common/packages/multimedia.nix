@@ -10,6 +10,7 @@
         handbrake # tool for encoding video files 
         krita # drawing program
         makemkv # BluRay and DVD ripper
+        mkvtoolnix
         mpv # music daemon
         newsflash # RSS feed reader for GNOME
         pavucontrol

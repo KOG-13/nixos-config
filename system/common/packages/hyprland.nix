@@ -6,6 +6,7 @@
         hyprlock # screen lock
         brightnessctl
         rofi-wayland
+        kdePackages.gwenview
         wl-clipboard
         waybar
         inputs.swww.packages.${pkgs.system}.swww

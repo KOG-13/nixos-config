@@ -12,6 +12,7 @@
 		    stateVersion = "25.05";
 	  };	
 
+
     xdg.mimeApps = {
         enable = true;
             defaultApplications = {

@@ -1,5 +1,6 @@
 {
     imports = [
+        ./dunst/dunst.nix
         ./git.nix
         ./fzf.nix
         ./starship/starship.nix

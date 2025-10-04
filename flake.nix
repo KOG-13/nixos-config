@@ -42,14 +42,22 @@
 			              hostname = "desktop";
 			              pkgs-stable = import nixpkgs {
 				                inherit system;
-				                config.allowUnfree = true;
-                        config.cudaSupport = true;
+                        config = {
+                            allowUnfree = true;
+                            allowUnfreePredicate = _: true;
+                            cudaSupport = true;
+                        };
 			              };
 			              inherit inputs system;
 			          };
                 modules = [
                     ./system/common/configuration.nix
                     ./system/desktop/default.nix
+                    home-manager.nixosModules.home-manager
+                    {
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPackages = true;
+                    }
                 ];
             };
 
@@ -58,13 +66,22 @@
 			              hostname = "laptop";
 			              pkgs-stable = import nixpkgs {
 				                inherit system;
-				                config.allowUnfree = true;
+                        config = {
+                            allowUnfree = true;
+                            allowUnfreePredicate = _: true;
+                            cudaSupport = true;
+                        };
 			              };
 			              inherit inputs system;
 			          };
 			          modules = [
                     ./system/common/configuration.nix
                     ./system/laptop/default.nix
+                    home-manager.nixosModules.home-manager
+                    {
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPackages = true;
+                    }
 			          ];
             };
 		    };

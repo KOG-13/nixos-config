@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:{
+{ pkgs, lib, inputs, ... }:{
     environment.systemPackages = with pkgs;
     [
         btop # TUI system monitor
@@ -34,5 +34,9 @@
         zoxide # powerful cd
         zsh # terminal shell
             zplug # zsh plugins
+    ];
+
+    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+        "ventoy"
     ];
 }
