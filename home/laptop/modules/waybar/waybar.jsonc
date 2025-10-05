@@ -1,0 +1,202 @@
+{
+//==========Sizing Details================
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "width": 1440,
+    "spacing": 5,
+    "reload_style_on_change": true,
+    //"output": "eDP-1",
+
+//===========Modules=====================
+    "modules-left": [ "custom/launcher", "hyprland/workspaces" ],
+    "modules-center": [  "clock" ],
+    "modules-right": [ "cpu", "memory", "network#speed", "network", "battery", "wireplumber", "custom/power" ],
+
+//==========Custom Groups====================
+    "group/windows": {
+        "orientation":"horizontal",
+        "modules":[
+            "custom/openbracket",
+            "hyprland/window",
+            "custom/closebracket",
+        ]
+    },
+
+//===========Custom Modules=====================
+    // Open, Clost, and split brackets for styling
+    "custom/openbracket": {
+        "format": "[",
+        "tooltip": false
+    },
+
+    "custom/closebracket": {
+        "format": "]",
+        "tooltip": false
+    },
+
+    "custom/split": {
+        "format": "|",
+        "tooltip": false
+    },
+    
+    // Nixos Icon and program launcher
+    "custom/launcher": {
+        "format": "󱄅 ",
+        "tooltip": false,
+        "on-click": "rofi -show drun"
+    },
+    
+    // Icon for screenshot button
+    "custom/screenshot": {
+        "format": "󰹑 ",
+        "tooltip": false,
+        "on-click": "hyprshot -m region",
+        "on-click-right": "hyprshot -m output"
+    },
+
+    "custom/power": {
+        "format": "⏻ ",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
+
+//===========Module Config==========================
+   
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "warp-on-scroll": true,
+        "enable-bar-scroll": true,
+        "disable-scroll-wraparound": true,
+        "active-only":false,
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispacth workspace -1",
+        "on-scroll-down": "hyprctl dispacth workspace +1",
+        "format": " {icon} ",
+        "format-icons": {
+            "1": " ",
+            "2": "󰈹 ",
+            "3": " ", 
+            "4": " ",
+            "5": " ",
+            "6": " ",
+        },
+        "persistent-workspaces": {
+            "*": 6
+        }
+    },
+    
+
+    "hyprland/window": {
+        "tooltip": false,
+        "rewrite": {
+            "": "󱄅 Nixos",
+            "(.*)LibreWolf": "LibreWolf",
+            "Spotify (.*)": "Spotify",
+            "(.*)Discord": "Discord",
+        }    
+    },
+
+    "clock":{
+        "format": "{:%H:%M}",
+        "tooltip": true,
+        "tooltip-format": "󰸗 {:%a %b%e}"
+    },
+
+    /*"network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " ",
+        "format-ethernet": "{ipaddr}/{cidr}  ",
+        "tooltip-format": "{ifname} via {gwaddr}  ",
+        "format-linked": "{ifname} (No IP)  ",
+        "format-disconnected": "󰌙 ",
+        //"format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },*/ 
+
+    "network": {
+    //"format-wifi": "{icon}",
+    "format-wifi": " ",
+    "format-ethernet": "󰈀",
+    //"format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤢 ", "󰤨 "],
+    "format-disconnected": "󰪎 ",
+    "interval": 5,
+    "tooltip-format-wifi": " {bandwidthDownBytes} |  {bandwidthUpBytes} | {essid}",
+    "tooltip-format-disconnected": "Disconnected",
+    //"on-click": "exec ~/.config/rofi/wifi/wifi.sh",
+    //"on-click-right": "kitty -e nmtui"
+  },
+
+    "network#speed": {
+    "interval": 1,
+    "format": "{ifname}%%",
+    "format-wifi": " {bandwidthDownBytes}  {bandwidthUpBytes}",
+    "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+    "format-disconnected": "󰌙",
+    "tooltip-format": "{ipaddr}",
+    "format-linked": "󰈁 {ifname} (No IP)",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname} 󰌘",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "max-length": 22,
+    "min-length": 20,
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+  },
+
+    /*
+    "bluetooth": {
+        "format": "{format-connected}",
+        "format-connected": "󰂯"
+    },
+    */
+
+    /*
+    "custom/brightness": {
+        // "device": "acpi_video1",
+        "exec": "brightness-ddc.sh",
+        "interval": 1,
+        "format": "󰃞 ",
+        //"format-icons": ["", "", "", "", "", "", "", "", ""],
+        //"format": "󰃞 ",
+        "tooltip": true,
+        "tooltip-format": "{}",
+        "on-scroll-up": "ddcutil setvcp 10 + 5",
+        "on-scroll-down": "ddcutil setvcp 10 - 5",
+        "on-click": "ddcutil setvcp 10 100"
+    },
+    */
+
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": " ",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "max-volume": 100,
+        "scroll-step": 1,
+        "format-icons": [" ", " ", " "],
+        "states": []
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "  {}%"
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%",
+        "on-click": "kitty htop"
+    },
+
+    "battery": {
+        "interval": 20,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25,
+        "tooltip-format": "{timeTo} ({power}W)"
+    }    
+}

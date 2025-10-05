@@ -64,12 +64,12 @@ Android = ""
 Arch = "󰣇"
 Artix = "󰣇"
 EndeavourOS = ""
+NixOS = "󱄅 "
 CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 Pop = ""
-NixOS = "󱄅 "
 
 [username]
 show_always = true

@@ -1,6 +1,6 @@
 {
     imports = [
-        ./dunst/dunst.nix
+        #./dunst/dunst.nix
         ./git.nix
         ./fzf.nix
         ./starship/starship.nix
@@ -9,14 +9,14 @@
         ./lsd/lsd.nix
         #./swww.nix
         ./tmux.nix
-        ./hypr/hyprland.nix
-        ./hypr/hypridle/hypridle.nix
+        #./hypr/hyprland.nix
+        #./hypr/hypridle/hypridle.nix
         ./spicetify.nix
         #./vscode.nix
-        ./waybar/waybar.nix
-        ./waybar/scripts/waybar-toggle.nix
-        ./waybar/scripts/waybar-restart.nix
-        ./waybar/scripts/brightness-ddc.nix
+        #./waybar/waybar.nix
+        #./waybar/scripts/waybar-toggle.nix
+        #./waybar/scripts/waybar-restart.nix
+        #./waybar/scripts/brightness-ddc.nix
         ./librewolf/librewolf.nix
 	  ]; 
 }

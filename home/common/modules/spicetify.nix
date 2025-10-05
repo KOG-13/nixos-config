@@ -18,7 +18,7 @@ in {
     ];
 
     enabledSnippets = with spicePkgs.snippets; [
-      rotatingCoverart
+      #rotatingCoverart
       pointer
     ];
 
