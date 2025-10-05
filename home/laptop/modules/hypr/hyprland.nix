@@ -29,7 +29,7 @@
 	      exec-once = [
             "dunst"
             "swww-daemon"
-            "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Pixel Art Wallpaper.png"
+            "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Ireland.jpg"
             "waybar-toggle.sh"
             "hypridle"
             #"waybar & disown" # ¯\_(ツ)_/¯ if it works, it works
