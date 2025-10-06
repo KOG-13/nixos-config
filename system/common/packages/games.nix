@@ -3,18 +3,13 @@
     [
         polymc
         pokemmo-installer # PokeMMO game installer/launcher
-        /*
-        (retroarch.override {
-            cores = with libretro; [
-              genesis-plus-gx
-              snes9x
-              beetle-psx-hw
-            ];
-          }
-        )
-        */
-        desmume
-        steam
+
+        (retroarch.withCores (cores: with cores; [
+            snes9x
+            mgba
+            desmume 
+        ]))
+        
         mangohud
 		    linuxKernel.packages.linux_zen.xpadneo # package for steam controller compatibility
     ];
