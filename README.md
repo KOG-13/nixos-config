@@ -9,7 +9,7 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
        - [X] Script to switch between starship configs
 2. - [ ] hyprland (in progress)
        - [X] waybar
-          - [ ] Resize for laptop
+          - [X] Resize for laptop
        - [ ] Utilities
           - [X] Brightness Control
           - [X] Volume Control
