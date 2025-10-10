@@ -4,6 +4,5 @@
         blender # 3D modeling software
         blockbench # voxel modeling software
         gimp # FOSS Photoshop alternative
-        sweethome3d.application
     ];
 }

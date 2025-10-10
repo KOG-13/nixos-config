@@ -11,21 +11,19 @@
         waybar
         inputs.swww.packages.${pkgs.system}.swww
         cliphist # retains clipboard history in hyprland
-        kdePackages.dolphin # File Manager
         dunst # notification daemon for hyprland 
         libnotify # dependency for dunst
         screenkey # key press display for Hyprland
         wev # wayland xev
         wlogout #logout/shutdown screen
         xdg-desktop-portal-hyprland
-        libsForQt5.qtstyleplugin-kvantum
-        libsForQt5.qt5ct
-        kdePackages.qt6ct
-        themechanger
-        gruvbox-kvantum
+        #libsForQt5.qtstyleplugin-kvantum
+        #libsForQt5.qt5ct
+        #kdePackages.qt6ct
+        #gruvbox-kvantum
         xfce.thunar
         xfce.thunar-volman
-        gtk-engine-murrine
+        #gtk-engine-murrine
         
     ];
 

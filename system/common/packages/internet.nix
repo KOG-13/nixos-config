@@ -7,14 +7,12 @@
         hexchat
         librewolf # no longer just for old people
         mullvad-vpn # VPN client
-        protonmail-desktop # desktop client for proton mail
         qbittorrent # torrenting software
         syncthing # file synchronization tool
         #synology-drive-client # file synchronizion for Synology NAS 
-        nextcloud-client
+        #nextcloud-client
         telegram-desktop
         thunderbird # email client
-        tutanota-desktop
         (vivaldi.overrideAttrs # web browser (additional config for KDE 6 compatibility
             (oldAttrs: {
           dontWrapQtApps = false;

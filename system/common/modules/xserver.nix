@@ -10,12 +10,14 @@
         displayManager.sddm.enable = true;
         displayManager.sddm.wayland.enable = true;
         
+       
         desktopManager.plasma6 = {
             enable = true;
             enableQt5Integration = true;
         };        
+        
     };
-
+    
     environment.plasma6.excludePackages = with pkgs.kdePackages; [ 
         kwalletmanager
     ];
@@ -24,6 +26,7 @@
         kwalletmanager
         kwallet
     ];
+    
 
 }
 

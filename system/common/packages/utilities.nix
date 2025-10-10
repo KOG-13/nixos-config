@@ -3,12 +3,11 @@
     [
         btop # TUI system monitor
         fastfetch # neofetch replacement
-        fish #YOU KNOW WHAT THAT MEANS
         glibcInfo
         man-pages
         gnome-multi-writer # GUI USB flasher
         gparted # GUI partition manager
-        gvfs
+        gvfs #allows Thunar to view and mount external drives
         hyprshot # wayland screenshot taker
         libsForQt5.kalk # Calculator for KDE
         keepassxc # locally hosted password manager
@@ -23,7 +22,6 @@
         poppler_utils # utility package for altering pdfs
         (ranger.override {imagePreviewSupport = true;}) # TUI file manager
         resources # task manager-esque 
-        rockbox-utility
         tmux # all of the shells
         unzip # Zip file extracter
         valgrind #memory leak detection
