@@ -3,6 +3,7 @@
         ./bluetooth.nix
         ./bootloader.nix
         ./environment.nix
+        ./gvfs.nix
         ./kanata.nix
         ./hyprland.nix
         ./mullvad.nix

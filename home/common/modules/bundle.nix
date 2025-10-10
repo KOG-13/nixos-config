@@ -15,6 +15,7 @@
         #./vscode.nix
         #./waybar/waybar.nix
         #./waybar/scripts/waybar-toggle.nix
+        ./ranger.nix
         #./waybar/scripts/waybar-restart.nix
         #./waybar/scripts/brightness-ddc.nix
         ./librewolf/librewolf.nix

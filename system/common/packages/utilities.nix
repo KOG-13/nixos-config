@@ -8,6 +8,7 @@
         man-pages
         gnome-multi-writer # GUI USB flasher
         gparted # GUI partition manager
+        gvfs
         hyprshot # wayland screenshot taker
         libsForQt5.kalk # Calculator for KDE
         keepassxc # locally hosted password manager
@@ -20,7 +21,7 @@
         picard # music metadata editer
         pika-backup # home directory backup manager
         poppler_utils # utility package for altering pdfs
-        ranger # TUI file manager
+        (ranger.override {imagePreviewSupport = true;}) # TUI file manager
         resources # task manager-esque 
         rockbox-utility
         tmux # all of the shells

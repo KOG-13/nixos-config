@@ -29,8 +29,8 @@
 			      #bash -c 'fortune | pokemonsay'
 
 			      # runs bash script in ./modules/ to setup fzf (best solution here was the easiest one)
-			      if [ -f ~/nix/common/homes/modules/initFzf.sh ]; then
-			          bash ~/nix/common/homes/modules/initFzf.sh 
+			      if [ -f ~/nix/home/common/modules/initFzf.sh ]; then
+			          bash ~/nix/home/common/modules/initFzf.sh 
 			      fi
 
 			      # for using fzf for tab completion (again, something I wasn't able to implement with nix)
@@ -87,7 +87,7 @@
             webdev = "devenv shell && codium";
             flake = "[ -f ./flake.nix ] && nvim ./flake.nix || echo 'flake.nix not found in the current directory'";
 
-            push = "cat ~/Documents/key.txt | xclip -selection clipboard && git push";
+            push = "cat ~/Documents/key.txt | wl-copy && git push";
             
             obsidian  = "obsidian --disable-gpu";
             pipes = "pipes.sh";

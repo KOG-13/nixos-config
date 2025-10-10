@@ -152,16 +152,22 @@
             };
         };	
 
+        windowrulev2 = [ 
+            "workspace 6, class:^(steam)$"
+        ];
+
         "$mainMod" = "SUPER";
         bind = [
 
             "$mainMod, Return, exec, kitty"
-            "$mainMod, T, exec, kitty"
+            "$mainMod, T, exec, thunar"
             "$mainMod, Q, killactive,"
             "$mainMod, M, exit,"
-            "$mainMod, E, exec, dolphin"
+            "$mainMod, O, exec, obsidian"
             "$mainMod, F, togglefloating,"
-            "$mainMod, D, exec, rofi -show run"
+            "$mainMod, D, exec, hyprctl dispatch workspace 3 && discord"
+            "$mainMod, S, exec, spotify"
+            "$mainMod, C, exec, codium"
             "$mainMod, SPACE, exec, rofi -show run"
             "$mainMod, P, pseudo, # dwindle"
             #"$mainMod, J, togglesplit, # dwindle"

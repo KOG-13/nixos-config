@@ -53,7 +53,7 @@
                 modules = [
                     ./system/common/configuration.nix
                     ./system/desktop/default.nix
-                    home-manager.nixosModules.home-manager
+                    inputs.home-manager.nixosModules.home-manager
                     {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
@@ -77,7 +77,7 @@
 			          modules = [
                     ./system/common/configuration.nix
                     ./system/laptop/default.nix
-                    home-manager.nixosModules.home-manager
+                    inputs.home-manager.nixosModules.home-manager
                     {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ inputs, config, pkgs, ... }: {
 
 	  imports = [
 		    ./zsh.nix
@@ -28,6 +28,30 @@
         "org/virt-manager/virt-manager/connections" = {
             autocorrect = ["qemu:///system"];
             uris = ["qemu:///system"];
+        };
+    };
+
+    qt = {
+        enable = true;
+        platformTheme.name = "gtk";
+        style.name = "gruvbox-dark";
+        style.package = pkgs.gruvbox-dark-gtk;
+    };
+
+    gtk = {
+
+    enable = true;
+        # iconTheme.package = pkgs.nordzy-icon-theme;
+        iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
+        iconTheme.name = "oomox-gruvbox-dark";
+
+        theme.package = pkgs.gruvbox-dark-gtk;
+        theme.name = "gruvbox-dark";
+        
+        cursorTheme = {
+            name = "capitaine-cursors";
+            package = pkgs.capitaine-cursors;
+            size = 16;
         };
     };
 

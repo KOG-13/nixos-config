@@ -117,6 +117,8 @@
     nixpkgs.overlays = [ inputs.polymc.overlay ];
 
 
+    environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
+
     # Enable touchpad support (enabled default in most desktopManager).
      #services.xserver.libinput.enable = true;
 
