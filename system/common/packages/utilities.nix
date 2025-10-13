@@ -3,6 +3,7 @@
     [
         btop # TUI system monitor
         fastfetch # neofetch replacement
+        filebot
         glibcInfo
         man-pages
         gnome-multi-writer # GUI USB flasher
@@ -13,6 +14,7 @@
         keepassxc # locally hosted password manager
         kitty # terminal emulator
         lazygit # TUI for git commands
+        lf
         lsd # ls with more colors
         pamixer
         pcmanfm # file manager
@@ -24,6 +26,7 @@
         resources # task manager-esque 
         tmux # all of the shells
         unzip # Zip file extracter
+        ueberzugpp
         valgrind #memory leak detection
         wget # File retrieval for HTTP/S, FTP
         xclip # copy cli commands to clipboard
