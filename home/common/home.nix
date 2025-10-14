@@ -51,7 +51,7 @@
         cursorTheme = {
             name = "capitaine-cursors";
             package = pkgs.capitaine-cursors;
-            size = 16;
+            size = 24;
         };
     };
 

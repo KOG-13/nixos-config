@@ -10,6 +10,10 @@
     # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
     networking = {
         hostName = "desktop";
+        firewall = {
+            allowedTCPPorts = [ 8384 22000 ];
+            allowedUDPPorts = [ 22000 21027 ];
+        };
     };
     # Configure network proxy if necessary
     # networking.proxy.default = "http://user:password@proxy:port/";

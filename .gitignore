@@ -1,2 +1,3 @@
 ./system/common/modules/wifi.nix
 ./home/common/modules/git.nix
+./system/desktop/modules/syncthing.nix
