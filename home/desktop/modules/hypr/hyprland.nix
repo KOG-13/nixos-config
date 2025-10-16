@@ -29,12 +29,11 @@
         ];
  
 	      exec-once = [
+            "dunst"
             "swww-daemon"
             "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Pixel Art Wallpaper.png"
-            #"killall waybar"
             "waybar-toggle.sh"
             "hypridle"
-            #"waybar & disown" # ¯\_(ツ)_/¯ if it works, it works
 	      ];
 
 
@@ -48,8 +47,6 @@
             gaps_in = 5;
             gaps_out = 8;
             border_size = 2;
-            #"col.active_border" = "rgba(33ccffee) rdba(00ff99ee) 45deg";
-            #"col.active_border" = "rgba(f0bb78ee) rdba(543a14ee) 45deg";
             "col.active_border" = "rgba(f0bb78ee)";
             "col.inactive_border" = "rgba(595959aa)";
 
@@ -253,7 +250,7 @@
             ", XF86MonBrightnessUp, exec, brightnessctl set +5% "
 
             # Screen lock
-            "$mainMod, B, exec, wpctl set-mute 60 toggle && hyprlock"
+            "$mainMod, B, exec, screenlock.sh"
 
 
             # Configuration files

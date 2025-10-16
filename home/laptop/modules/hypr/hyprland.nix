@@ -12,8 +12,6 @@
 	      # See https://wiki.hyprland.org/Configuring/Monitors/
 	      #monitor = ",preferred,auto,auto";
         monitor = [ 
-            #"DP-2,preferred,auto,auto"
-            #"HDMI-A-1,preferred,auto,auto"
             "eDP-1, preferred,auto,auto"
         ];
 
@@ -32,7 +30,6 @@
             "swww img ~/Pictures/Wallpapers/Ultrawide wallpapers/Ireland.jpg"
             "waybar-toggle.sh"
             "hypridle"
-            #"waybar & disown" # ¯\_(ツ)_/¯ if it works, it works
 	      ];
 
 
@@ -46,8 +43,6 @@
             gaps_in = 5;
             gaps_out = 8;
             border_size = 2;
-            #"col.active_border" = "rgba(33ccffee) rdba(00ff99ee) 45deg";
-            #"col.active_border" = "rgba(f0bb78ee) rdba(543a14ee) 45deg";
             "col.active_border" = "rgba(f0bb78ee)";
             "col.inactive_border" = "rgba(595959aa)";
 
@@ -154,12 +149,14 @@
         bind = [
 
             "$mainMod, Return, exec, kitty"
-            "$mainMod, T, exec, kitty"
+            "$mainMod, T, exec, thunar"
             "$mainMod, Q, killactive,"
             "$mainMod, M, exit,"
-            "$mainMod, E, exec, dolphin"
+            "$mainMod, O, exec, obsidian"
             "$mainMod, F, togglefloating,"
-            "$mainMod, D, exec, rofi -show run"
+            "$mainMod, D, exec, hyprctl dispatch workspace 3 && discord"
+            "$mainMod, S, exec, spotify"
+            "$mainMod, C, exec, codium"
             "$mainMod, SPACE, exec, rofi -show run"
             "$mainMod, P, pseudo, # dwindle"
             #"$mainMod, J, togglesplit, # dwindle"
@@ -244,8 +241,8 @@
             ", XF86MonBrightnessDown, exec, brightnessctl set 5%- "
             ", XF86MonBrightnessUp, exec, brightnessctl set +5% "
 
-            # Screen lock
-            "$mainMod, B, exec, wpctl set-mute 60 toggle && hyprlock"
+            # Screen lock  
+            "$mainMod, B, exec, screenlock.sh"
 
 
             # Configuration files
