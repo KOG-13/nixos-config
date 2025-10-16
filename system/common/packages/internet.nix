@@ -19,8 +19,6 @@
           dontPatchELF = true;
           nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [pkgs.kdePackages.wrapQtAppsHook];
             }))
-        whatsapp-for-linux # why can't everyone just use signal
-        whatsapp-emoji-font # please. I'm taking this shit off when I'm out of school
         wpa_supplicant_gui
     ];
 }

@@ -86,6 +86,7 @@
             dev = "devenv shell";
             webdev = "devenv shell && codium";
             flake = "[ -f ./flake.nix ] && nvim ./flake.nix || echo 'flake.nix not found in the current directory'";
+            status = "git status";
 
             push = "cat ~/Documents/key.txt | wl-copy && git push";
             
