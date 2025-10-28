@@ -14,5 +14,6 @@
         #cmake # C/C++ Compiler
         #kotlin # Java-like language
         openjdk
+        sqlite
     ];
 }

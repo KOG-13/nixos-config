@@ -21,6 +21,10 @@
                         path = "/home/kog/Documents/Keepass";
                         devices = [ "Pixel9" ];
                     };
+                    "Sync" = {
+                        path = "/home/kog/Sync/";
+                        devices = [ "Pixel9" ];
+                    };
                 };
             };
         };
