@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:{
     environment.systemPackages = with pkgs;
     [
-        polymc
+        #polymc
         pokemmo-installer # PokeMMO game installer/launcher
 
         (retroarch.withCores (cores: with cores; [

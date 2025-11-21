@@ -3,7 +3,7 @@
     [
         asunder # CD ripper
         aseprite
-        audacity # audio editor/mixer
+        #audacity # audio editor/mixer
         calibre # ebub e-reader
         handbrake # tool for encoding video files 
         krita # drawing program
@@ -14,6 +14,7 @@
         pavucontrol
         rhythmbox # Export music to Ipod
         spotify # music streaming service
+        tenacity #Audacity alternative
         tt-rss
         vlc # video player
         yt-dlp # CLI for downloading youtube videos
