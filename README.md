@@ -7,17 +7,17 @@ Directory and file structures inspired by [Andrey0189](https://github.com/Andrey
 ## Configuration Goals
 1. - [X] [zsh](https://github.com/KOG-13/nixos-config/blob/da80d281ffc67a0841aab6b052765cc6d39cf6eb/common/homes/zsh.nix)
        - [X] Script to switch between starship configs
-2. - [ ] hyprland (in progress)
+2. - [X] hyprland
        - [X] waybar
           - [X] Resize for laptop
-       - [ ] Utilities
+       - [X] Utilities
           - [X] Brightness Control
           - [X] Volume Control
           - [X] Hibernation
           - [X] Screenshot
           - [X] Wifi
-          - [ ] VPN
-       - [ ] rofi 
+          - [X] VPN
+       - [X] rofi 
 3. - [X] [nixvim](https://github.com/KOG-13/nixvim-config)
        - [ ] Config cleanup
 4. - [X] tmux
